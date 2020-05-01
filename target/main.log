@@ -1,33 +1,33 @@
-19:02:30.062 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
-19:02:30.859 request:
+19:08:40.497 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+19:08:41.603 request:
 1 > GET https://jsonplaceholder.typicode.com/users
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
 1 > Host: jsonplaceholder.typicode.com
 1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_91)
 
-19:02:31.962 response time in milliseconds: 1044.60
+19:08:43.006 response time in milliseconds: 1388.57
 1 < 200
 1 < Access-Control-Allow-Credentials: true
-1 < Age: 4522
+1 < Age: 4893
 1 < CF-Cache-Status: HIT
-1 < CF-RAY: 58cbc1e318d10726-LHR
+1 < CF-RAY: 58cbcaf25817ce3f-LHR
 1 < Cache-Control: max-age=14400
 1 < Connection: keep-alive
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Fri, 01 May 2020 19:02:32 GMT
+1 < Date: Fri, 01 May 2020 19:08:43 GMT
 1 < Etag: W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"
 1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 1 < Expires: -1
 1 < Pragma: no-cache
 1 < Server: cloudflare
-1 < Set-Cookie: __cfduid=d1ef16bde30d6fea4563fa169446b97011588359752; expires=Sun, 31-May-20 19:02:32 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
+1 < Set-Cookie: __cfduid=dc19e633c95ee1ae965bb4dbbd51037381588360123; expires=Sun, 31-May-20 19:08:43 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
 1 < Transfer-Encoding: chunked
 1 < Vary: Origin, Accept-Encoding
 1 < Via: 1.1 vegur
 1 < X-Content-Type-Options: nosniff
 1 < X-Powered-By: Express
-1 < cf-request-id: 02733781ec000007268eb50200000001
+1 < cf-request-id: 02733d2b7a0000ce3f3d375200000001
 [
   {
     "id": 1,
@@ -261,24 +261,24 @@
   }
 ]
 
-19:02:32.344 request:
+19:08:43.334 request:
 2 > GET https://jsonplaceholder.typicode.com/users/1
 2 > Accept-Encoding: gzip,deflate
 2 > Connection: Keep-Alive
-2 > Cookie: __cfduid=d1ef16bde30d6fea4563fa169446b97011588359752
+2 > Cookie: __cfduid=dc19e633c95ee1ae965bb4dbbd51037381588360123
 2 > Host: jsonplaceholder.typicode.com
 2 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_91)
 
-19:02:33.120 response time in milliseconds: 773.37
+19:08:43.930 response time in milliseconds: 593.56
 2 < 200
 2 < Access-Control-Allow-Credentials: true
-2 < Age: 2241
+2 < Age: 2612
 2 < CF-Cache-Status: HIT
-2 < CF-RAY: 58cbc1eb0a3407aa-LHR
+2 < CF-RAY: 58cbcaf89f3ff41b-LHR
 2 < Cache-Control: max-age=14400
 2 < Connection: keep-alive
 2 < Content-Type: application/json; charset=utf-8
-2 < Date: Fri, 01 May 2020 19:02:33 GMT
+2 < Date: Fri, 01 May 2020 19:08:44 GMT
 2 < Etag: W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"
 2 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 2 < Expires: -1
@@ -289,7 +289,7 @@
 2 < Via: 1.1 vegur
 2 < X-Content-Type-Options: nosniff
 2 < X-Powered-By: Express
-2 < cf-request-id: 02733786e1000007aaa094c200000001
+2 < cf-request-id: 02733d2f630000f41bff9e9200000001
 {
   "id": 1,
   "name": "Leanne Graham",
@@ -314,8 +314,20 @@
   }
 }
 
-19:02:33.174 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
-19:02:33.288 request:
+19:08:43.997 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+19:08:44.072 [print] printing payload:  {
+  "name": "Test User",
+  "username": "testuser",
+  "email": "test@user.com",
+  "address": {
+    "street": "Has No Name",
+    "suite": "Apt. 123",
+    "city": "Electri",
+    "zipcode": "54321-6789"
+  }
+}
+
+19:08:44.099 request:
 1 > POST https://jsonplaceholder.typicode.com/users
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
@@ -325,29 +337,29 @@
 1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_91)
 {"name":"Test User","username":"testuser","email":"test@user.com","address":{"street":"Has No Name","suite":"Apt. 123","city":"Electri","zipcode":"54321-6789"}}
 
-19:02:57.883 response time in milliseconds: 24592.14
+19:08:45.576 response time in milliseconds: 1465.32
 1 < 201
 1 < Access-Control-Allow-Credentials: true
 1 < Access-Control-Expose-Headers: Location
 1 < CF-Cache-Status: DYNAMIC
-1 < CF-RAY: 58cbc1eeed90dc27-LHR
+1 < CF-RAY: 58cbcafd99e20772-LHR
 1 < Cache-Control: no-cache
 1 < Connection: keep-alive
 1 < Content-Length: 216
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Fri, 01 May 2020 19:02:58 GMT
+1 < Date: Fri, 01 May 2020 19:08:45 GMT
 1 < Etag: W/"d8-pYV7+YuMGP2hxHPU9ARrf97ifDA"
 1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 1 < Expires: -1
 1 < Location: http://jsonplaceholder.typicode.com/users/11
 1 < Pragma: no-cache
 1 < Server: cloudflare
-1 < Set-Cookie: __cfduid=d9757365c02c8ef824b220249c0467cbc1588359754; expires=Sun, 31-May-20 19:02:34 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
+1 < Set-Cookie: __cfduid=d17898eaafe95734c1cbd4ef3fcb8ed0b1588360125; expires=Sun, 31-May-20 19:08:45 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
 1 < Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
 1 < Via: 1.1 vegur
 1 < X-Content-Type-Options: nosniff
 1 < X-Powered-By: Express
-1 < cf-request-id: 027337894e0000dc27f4023200000001
+1 < cf-request-id: 02733d327e00000772b38f1200000001
 {
   "name": "Test User",
   "username": "testuser",
@@ -361,4 +373,4 @@
   "id": 11
 }
 
-19:02:57.919 [print] created id is:  11
+19:08:45.618 [print] created id is:  11
