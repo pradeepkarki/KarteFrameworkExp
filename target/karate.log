@@ -1,0 +1,484 @@
+19:00:18.372 [main] ERROR com.intuit.karate - javascript function call failed: ReferenceError: "karate" is not defined
+19:00:18.382 [main] ERROR com.intuit.karate - failed function body: function() {    
+  var env = karate.env; // get system property 'karate.env'
+  karate.log('karate.env system property was:', env);
+  if (!env) {
+    env = 'dev';
+  }
+  var config = {
+    env: env,
+	myVarName: 'someValue'
+  }
+  if (env == 'dev') {
+    // customize
+    // e.g. config.foo = 'bar';
+  } else if (env == 'e2e') {
+    // customize
+  }
+  return config;
+}
+19:00:18.382 [main] ERROR com.intuit.karate - evaluation of 'karate-config.js' failed: javascript function call failed: ReferenceError: "karate" is not defined
+19:00:19.425 [main] ERROR com.intuit.karate - javascript function call failed: ReferenceError: "karate" is not defined
+19:00:19.428 [main] ERROR com.intuit.karate - failed function body: function() {    
+  var env = karate.env; // get system property 'karate.env'
+  karate.log('karate.env system property was:', env);
+  if (!env) {
+    env = 'dev';
+  }
+  var config = {
+    env: env,
+	myVarName: 'someValue'
+  }
+  if (env == 'dev') {
+    // customize
+    // e.g. config.foo = 'bar';
+  } else if (env == 'e2e') {
+    // customize
+  }
+  return config;
+}
+19:00:19.429 [main] ERROR com.intuit.karate - evaluation of 'karate-config.js' failed: javascript function call failed: ReferenceError: "karate" is not defined
+19:00:19.714 [main] ERROR com.intuit.karate - javascript function call failed: ReferenceError: "karate" is not defined
+19:00:19.724 [main] ERROR com.intuit.karate - failed function body: function() {    
+  var env = karate.env; // get system property 'karate.env'
+  karate.log('karate.env system property was:', env);
+  if (!env) {
+    env = 'dev';
+  }
+  var config = {
+    env: env,
+	myVarName: 'someValue'
+  }
+  if (env == 'dev') {
+    // customize
+    // e.g. config.foo = 'bar';
+  } else if (env == 'e2e') {
+    // customize
+  }
+  return config;
+}
+19:00:19.725 [main] ERROR com.intuit.karate - evaluation of 'karate-config.js' failed: javascript function call failed: ReferenceError: "karate" is not defined
+19:00:19.865 [main] ERROR com.intuit.karate - javascript function call failed: ReferenceError: "karate" is not defined
+19:00:19.866 [main] ERROR com.intuit.karate - failed function body: function() {    
+  var env = karate.env; // get system property 'karate.env'
+  karate.log('karate.env system property was:', env);
+  if (!env) {
+    env = 'dev';
+  }
+  var config = {
+    env: env,
+	myVarName: 'someValue'
+  }
+  if (env == 'dev') {
+    // customize
+    // e.g. config.foo = 'bar';
+  } else if (env == 'e2e') {
+    // customize
+  }
+  return config;
+}
+19:00:19.866 [main] ERROR com.intuit.karate - evaluation of 'karate-config.js' failed: javascript function call failed: ReferenceError: "karate" is not defined
+19:01:18.421 [main] ERROR com.intuit.karate - javascript function call failed: ReferenceError: "karate" is not defined
+19:01:18.428 [main] ERROR com.intuit.karate - failed function body: function() {    
+  var env = karate.env; // get system property 'karate.env'
+  karate.log('karate.env system property was:', env);
+  if (!env) {
+    env = 'dev';
+  }
+  var config = {
+    env: env,
+	myVarName: 'someValue'
+  }
+  if (env == 'dev') {
+    // customize
+    // e.g. config.foo = 'bar';
+  } else if (env == 'e2e') {
+    // customize
+  }
+  return config;
+}
+19:01:18.429 [main] ERROR com.intuit.karate - evaluation of 'karate-config.js' failed: javascript function call failed: ReferenceError: "karate" is not defined
+19:01:18.745 [main] ERROR com.intuit.karate - javascript function call failed: ReferenceError: "karate" is not defined
+19:01:18.745 [main] ERROR com.intuit.karate - failed function body: function() {    
+  var env = karate.env; // get system property 'karate.env'
+  karate.log('karate.env system property was:', env);
+  if (!env) {
+    env = 'dev';
+  }
+  var config = {
+    env: env,
+	myVarName: 'someValue'
+  }
+  if (env == 'dev') {
+    // customize
+    // e.g. config.foo = 'bar';
+  } else if (env == 'e2e') {
+    // customize
+  }
+  return config;
+}
+19:01:18.745 [main] ERROR com.intuit.karate - evaluation of 'karate-config.js' failed: javascript function call failed: ReferenceError: "karate" is not defined
+19:02:30.055 [main] WARN  com.intuit.karate - skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+19:02:30.858 [main] DEBUG com.intuit.karate - request:
+1 > GET https://jsonplaceholder.typicode.com/users
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: jsonplaceholder.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_91)
+
+19:02:31.915 [main] DEBUG com.intuit.karate - response time in milliseconds: 1044.60
+1 < 200
+1 < Access-Control-Allow-Credentials: true
+1 < Age: 4522
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 58cbc1e318d10726-LHR
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Fri, 01 May 2020 19:02:32 GMT
+1 < Etag: W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Expires: -1
+1 < Pragma: no-cache
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d1ef16bde30d6fea4563fa169446b97011588359752; expires=Sun, 31-May-20 19:02:32 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
+1 < Transfer-Encoding: chunked
+1 < Vary: Origin, Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+1 < cf-request-id: 02733781ec000007268eb50200000001
+[
+  {
+    "id": 1,
+    "name": "Leanne Graham",
+    "username": "Bret",
+    "email": "Sincere@april.biz",
+    "address": {
+      "street": "Kulas Light",
+      "suite": "Apt. 556",
+      "city": "Gwenborough",
+      "zipcode": "92998-3874",
+      "geo": {
+        "lat": "-37.3159",
+        "lng": "81.1496"
+      }
+    },
+    "phone": "1-770-736-8031 x56442",
+    "website": "hildegard.org",
+    "company": {
+      "name": "Romaguera-Crona",
+      "catchPhrase": "Multi-layered client-server neural-net",
+      "bs": "harness real-time e-markets"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Ervin Howell",
+    "username": "Antonette",
+    "email": "Shanna@melissa.tv",
+    "address": {
+      "street": "Victor Plains",
+      "suite": "Suite 879",
+      "city": "Wisokyburgh",
+      "zipcode": "90566-7771",
+      "geo": {
+        "lat": "-43.9509",
+        "lng": "-34.4618"
+      }
+    },
+    "phone": "010-692-6593 x09125",
+    "website": "anastasia.net",
+    "company": {
+      "name": "Deckow-Crist",
+      "catchPhrase": "Proactive didactic contingency",
+      "bs": "synergize scalable supply-chains"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Clementine Bauch",
+    "username": "Samantha",
+    "email": "Nathan@yesenia.net",
+    "address": {
+      "street": "Douglas Extension",
+      "suite": "Suite 847",
+      "city": "McKenziehaven",
+      "zipcode": "59590-4157",
+      "geo": {
+        "lat": "-68.6102",
+        "lng": "-47.0653"
+      }
+    },
+    "phone": "1-463-123-4447",
+    "website": "ramiro.info",
+    "company": {
+      "name": "Romaguera-Jacobson",
+      "catchPhrase": "Face to face bifurcated interface",
+      "bs": "e-enable strategic applications"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Patricia Lebsack",
+    "username": "Karianne",
+    "email": "Julianne.OConner@kory.org",
+    "address": {
+      "street": "Hoeger Mall",
+      "suite": "Apt. 692",
+      "city": "South Elvis",
+      "zipcode": "53919-4257",
+      "geo": {
+        "lat": "29.4572",
+        "lng": "-164.2990"
+      }
+    },
+    "phone": "493-170-9623 x156",
+    "website": "kale.biz",
+    "company": {
+      "name": "Robel-Corkery",
+      "catchPhrase": "Multi-tiered zero tolerance productivity",
+      "bs": "transition cutting-edge web services"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Chelsey Dietrich",
+    "username": "Kamren",
+    "email": "Lucio_Hettinger@annie.ca",
+    "address": {
+      "street": "Skiles Walks",
+      "suite": "Suite 351",
+      "city": "Roscoeview",
+      "zipcode": "33263",
+      "geo": {
+        "lat": "-31.8129",
+        "lng": "62.5342"
+      }
+    },
+    "phone": "(254)954-1289",
+    "website": "demarco.info",
+    "company": {
+      "name": "Keebler LLC",
+      "catchPhrase": "User-centric fault-tolerant solution",
+      "bs": "revolutionize end-to-end systems"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Mrs. Dennis Schulist",
+    "username": "Leopoldo_Corkery",
+    "email": "Karley_Dach@jasper.info",
+    "address": {
+      "street": "Norberto Crossing",
+      "suite": "Apt. 950",
+      "city": "South Christy",
+      "zipcode": "23505-1337",
+      "geo": {
+        "lat": "-71.4197",
+        "lng": "71.7478"
+      }
+    },
+    "phone": "1-477-935-8478 x6430",
+    "website": "ola.org",
+    "company": {
+      "name": "Considine-Lockman",
+      "catchPhrase": "Synchronised bottom-line interface",
+      "bs": "e-enable innovative applications"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Kurtis Weissnat",
+    "username": "Elwyn.Skiles",
+    "email": "Telly.Hoeger@billy.biz",
+    "address": {
+      "street": "Rex Trail",
+      "suite": "Suite 280",
+      "city": "Howemouth",
+      "zipcode": "58804-1099",
+      "geo": {
+        "lat": "24.8918",
+        "lng": "21.8984"
+      }
+    },
+    "phone": "210.067.6132",
+    "website": "elvis.io",
+    "company": {
+      "name": "Johns Group",
+      "catchPhrase": "Configurable multimedia task-force",
+      "bs": "generate enterprise e-tailers"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Nicholas Runolfsdottir V",
+    "username": "Maxime_Nienow",
+    "email": "Sherwood@rosamond.me",
+    "address": {
+      "street": "Ellsworth Summit",
+      "suite": "Suite 729",
+      "city": "Aliyaview",
+      "zipcode": "45169",
+      "geo": {
+        "lat": "-14.3990",
+        "lng": "-120.7677"
+      }
+    },
+    "phone": "586.493.6943 x140",
+    "website": "jacynthe.com",
+    "company": {
+      "name": "Abernathy Group",
+      "catchPhrase": "Implemented secondary concept",
+      "bs": "e-enable extensible e-tailers"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Glenna Reichert",
+    "username": "Delphine",
+    "email": "Chaim_McDermott@dana.io",
+    "address": {
+      "street": "Dayna Park",
+      "suite": "Suite 449",
+      "city": "Bartholomebury",
+      "zipcode": "76495-3109",
+      "geo": {
+        "lat": "24.6463",
+        "lng": "-168.8889"
+      }
+    },
+    "phone": "(775)976-6794 x41206",
+    "website": "conrad.com",
+    "company": {
+      "name": "Yost and Sons",
+      "catchPhrase": "Switchable contextually-based project",
+      "bs": "aggregate real-time technologies"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Clementina DuBuque",
+    "username": "Moriah.Stanton",
+    "email": "Rey.Padberg@karina.biz",
+    "address": {
+      "street": "Kattie Turnpike",
+      "suite": "Suite 198",
+      "city": "Lebsackbury",
+      "zipcode": "31428-2261",
+      "geo": {
+        "lat": "-38.2386",
+        "lng": "57.2232"
+      }
+    },
+    "phone": "024-648-3804",
+    "website": "ambrose.net",
+    "company": {
+      "name": "Hoeger LLC",
+      "catchPhrase": "Centralized empowering task-force",
+      "bs": "target end-to-end models"
+    }
+  }
+]
+
+19:02:32.343 [main] DEBUG com.intuit.karate - request:
+2 > GET https://jsonplaceholder.typicode.com/users/1
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Cookie: __cfduid=d1ef16bde30d6fea4563fa169446b97011588359752
+2 > Host: jsonplaceholder.typicode.com
+2 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_91)
+
+19:02:33.119 [main] DEBUG com.intuit.karate - response time in milliseconds: 773.37
+2 < 200
+2 < Access-Control-Allow-Credentials: true
+2 < Age: 2241
+2 < CF-Cache-Status: HIT
+2 < CF-RAY: 58cbc1eb0a3407aa-LHR
+2 < Cache-Control: max-age=14400
+2 < Connection: keep-alive
+2 < Content-Type: application/json; charset=utf-8
+2 < Date: Fri, 01 May 2020 19:02:33 GMT
+2 < Etag: W/"1fd-+2Y3G3w049iSZtw5t1mzSnunngE"
+2 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+2 < Expires: -1
+2 < Pragma: no-cache
+2 < Server: cloudflare
+2 < Transfer-Encoding: chunked
+2 < Vary: Origin, Accept-Encoding
+2 < Via: 1.1 vegur
+2 < X-Content-Type-Options: nosniff
+2 < X-Powered-By: Express
+2 < cf-request-id: 02733786e1000007aaa094c200000001
+{
+  "id": 1,
+  "name": "Leanne Graham",
+  "username": "Bret",
+  "email": "Sincere@april.biz",
+  "address": {
+    "street": "Kulas Light",
+    "suite": "Apt. 556",
+    "city": "Gwenborough",
+    "zipcode": "92998-3874",
+    "geo": {
+      "lat": "-37.3159",
+      "lng": "81.1496"
+    }
+  },
+  "phone": "1-770-736-8031 x56442",
+  "website": "hildegard.org",
+  "company": {
+    "name": "Romaguera-Crona",
+    "catchPhrase": "Multi-layered client-server neural-net",
+    "bs": "harness real-time e-markets"
+  }
+}
+
+19:02:33.174 [main] WARN  com.intuit.karate - skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+19:02:33.288 [main] DEBUG com.intuit.karate - request:
+1 > POST https://jsonplaceholder.typicode.com/users
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 160
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: jsonplaceholder.typicode.com
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_91)
+{"name":"Test User","username":"testuser","email":"test@user.com","address":{"street":"Has No Name","suite":"Apt. 123","city":"Electri","zipcode":"54321-6789"}}
+
+19:02:57.882 [main] DEBUG com.intuit.karate - response time in milliseconds: 24592.14
+1 < 201
+1 < Access-Control-Allow-Credentials: true
+1 < Access-Control-Expose-Headers: Location
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 58cbc1eeed90dc27-LHR
+1 < Cache-Control: no-cache
+1 < Connection: keep-alive
+1 < Content-Length: 216
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Fri, 01 May 2020 19:02:58 GMT
+1 < Etag: W/"d8-pYV7+YuMGP2hxHPU9ARrf97ifDA"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Expires: -1
+1 < Location: http://jsonplaceholder.typicode.com/users/11
+1 < Pragma: no-cache
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d9757365c02c8ef824b220249c0467cbc1588359754; expires=Sun, 31-May-20 19:02:34 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
+1 < Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Powered-By: Express
+1 < cf-request-id: 027337894e0000dc27f4023200000001
+{
+  "name": "Test User",
+  "username": "testuser",
+  "email": "test@user.com",
+  "address": {
+    "street": "Has No Name",
+    "suite": "Apt. 123",
+    "city": "Electri",
+    "zipcode": "54321-6789"
+  },
+  "id": 11
+}
+
+19:02:57.918 [main] INFO  com.intuit.karate - [print] created id is:  11
