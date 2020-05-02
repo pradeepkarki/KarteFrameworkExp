@@ -1,25 +1,30 @@
 Feature: sample karate test script
-  for help, see: https://github.com/intuit/karate/wiki/IDE-Support
+  
 
   Background: 
-    * url 'https://jsonplaceholder.typicode.com'
+    * url 'https://reqres.in/api'
+    
 
-  Scenario: get all users and then get the first user by id
+  Scenario: get user of with total number of 2 pages
     Given path 'users'
+    And param page = 2
     When method get
     Then status 200
-    * def first = response[0]
-    Given path 'users', first.id
-    When method get
-    Then status 200
-
-  Scenario: create a user and then get it by id
-    * def user = read('payload.json')
-    * print 'printing payload: ',user
-    Given url 'https://jsonplaceholder.typicode.com/users'
-    And request user
-    When method post
-    Then status 201
-    * def id = response.id
-    * print 'created id is: ', id
-    Given path id
+		* def data = response.data
+		* print 'data - >',data 
+   
+   
+    
+   Scenario: get user with id 23
+   Given path 'users',23
+   When method get
+   Then status 200
+   * def data = response.data
+   * print 'id : ',data.id
+   * print 'email id :',data.email
+   
+   
+   
+   
+   
+    

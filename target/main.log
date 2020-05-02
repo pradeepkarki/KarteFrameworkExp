@@ -1,193 +1,110 @@
-19:08:40.497 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
-19:08:41.603 request:
-1 > GET https://jsonplaceholder.typicode.com/users
+12:23:46.082 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+12:23:46.868 request:
+1 > GET https://reqres.in/api/users?page=2
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
-1 > Host: jsonplaceholder.typicode.com
+1 > Host: reqres.in
 1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_91)
 
-19:08:43.006 response time in milliseconds: 1388.57
+12:23:47.828 response time in milliseconds: 949.21
 1 < 200
-1 < Access-Control-Allow-Credentials: true
-1 < Age: 4893
+1 < Access-Control-Allow-Origin: *
+1 < Age: 1714
 1 < CF-Cache-Status: HIT
-1 < CF-RAY: 58cbcaf25817ce3f-LHR
+1 < CF-RAY: 58d1b733ac94f3fb-LHR
 1 < Cache-Control: max-age=14400
 1 < Connection: keep-alive
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Fri, 01 May 2020 19:08:43 GMT
-1 < Etag: W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"
+1 < Date: Sat, 02 May 2020 12:23:49 GMT
+1 < Etag: W/"4dd-IPv5LdOOb6s5S9E3i59wBCJ1k/0"
 1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 < Expires: -1
-1 < Pragma: no-cache
 1 < Server: cloudflare
-1 < Set-Cookie: __cfduid=dc19e633c95ee1ae965bb4dbbd51037381588360123; expires=Sun, 31-May-20 19:08:43 GMT; path=/; domain=.typicode.com; HttpOnly; SameSite=Lax
+1 < Set-Cookie: __cfduid=debf121cf41e37bbf173733f0d3fbe5d31588422229; expires=Mon, 01-Jun-20 12:23:49 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
 1 < Transfer-Encoding: chunked
-1 < Vary: Origin, Accept-Encoding
+1 < Vary: Accept-Encoding
 1 < Via: 1.1 vegur
-1 < X-Content-Type-Options: nosniff
 1 < X-Powered-By: Express
-1 < cf-request-id: 02733d2b7a0000ce3f3d375200000001
-[
+1 < cf-request-id: 0276f0d4460000f3fbbeaf6200000001
+{"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/follettkyle/128.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/araa3185/128.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/vivekprvr/128.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/russoedu/128.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/hebertialmeida/128.jpg"}],"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}
+
+12:23:48.101 [print] data - > [
   {
-    "id": 1,
-    "name": "Leanne Graham",
-    "username": "Bret",
-    "email": "Sincere@april.biz",
-    "address": {
-      "street": "Kulas Light",
-      "suite": "Apt. 556",
-      "city": "Gwenborough",
-      "zipcode": "92998-3874",
-      "geo": {
-        "lat": "-37.3159",
-        "lng": "81.1496"
-      }
-    },
-    "phone": "1-770-736-8031 x56442",
-    "website": "hildegard.org",
-    "company": {
-      "name": "Romaguera-Crona",
-      "catchPhrase": "Multi-layered client-server neural-net",
-      "bs": "harness real-time e-markets"
-    }
-  },
-  {
-    "id": 2,
-    "name": "Ervin Howell",
-    "username": "Antonette",
-    "email": "Shanna@melissa.tv",
-    "address": {
-      "street": "Victor Plains",
-      "suite": "Suite 879",
-      "city": "Wisokyburgh",
-      "zipcode": "90566-7771",
-      "geo": {
-        "lat": "-43.9509",
-        "lng": "-34.4618"
-      }
-    },
-    "phone": "010-692-6593 x09125",
-    "website": "anastasia.net",
-    "company": {
-      "name": "Deckow-Crist",
-      "catchPhrase": "Proactive didactic contingency",
-      "bs": "synergize scalable supply-chains"
-    }
-  },
-  {
-    "id": 3,
-    "name": "Clementine Bauch",
-    "username": "Samantha",
-    "email": "Nathan@yesenia.net",
-    "address": {
-      "street": "Douglas Extension",
-      "suite": "Suite 847",
-      "city": "McKenziehaven",
-      "zipcode": "59590-4157",
-      "geo": {
-        "lat": "-68.6102",
-        "lng": "-47.0653"
-      }
-    },
-    "phone": "1-463-123-4447",
-    "website": "ramiro.info",
-    "company": {
-      "name": "Romaguera-Jacobson",
-      "catchPhrase": "Face to face bifurcated interface",
-      "bs": "e-enable strategic applications"
-    }
-  },
-  {
-    "id": 4,
-    "name": "Patricia Lebsack",
-    "username": "Karianne",
-    "email": "Julianne.OConner@kory.org",
-    "address": {
-      "street": "Hoeger Mall",
-      "suite": "Apt. 692",
-      "city": "South Elvis",
-      "zipcode": "53919-4257",
-      "geo": {
-        "lat": "29.4572",
-        "lng": "-164.2990"
-      }
-    },
-    "phone": "493-170-9623 x156",
-    "website": "kale.biz",
-    "company": {
-      "name": "Robel-Corkery",
-      "catchPhrase": "Multi-tiered zero tolerance productivity",
-      "bs": "transition cutting-edge web services"
-    }
-  },
-  {
-    "id": 5,
-    "name": "Chelsey Dietrich",
-    "username": "Kamren",
-    "email": "Lucio_Hettinger@annie.ca",
-    "address": {
-      "street": "Skiles Walks",
-      "suite": "Suite 351",
-      "city": "Roscoeview",
-      "zipcode": "33263",
-      "geo": {
-        "lat": "-31.8129",
-        "lng": "62.5342"
-      }
-    },
-    "phone": "(254)954-1289",
-    "website": "demarco.info",
-    "company": {
-      "name": "Keebler LLC",
-      "catchPhrase": "User-centric fault-tolerant solution",
-      "bs": "revolutionize end-to-end systems"
-    }
-  },
-  {
-    "id": 6,
-    "name": "Mrs. Dennis Schulist",
-    "username": "Leopoldo_Corkery",
-    "email": "Karley_Dach@jasper.info",
-    "address": {
-      "street": "Norberto Crossing",
-      "suite": "Apt. 950",
-      "city": "South Christy",
-      "zipcode": "23505-1337",
-      "geo": {
-        "lat": "-71.4197",
-        "lng": "71.7478"
-      }
-    },
-    "phone": "1-477-935-8478 x6430",
-    "website": "ola.org",
-    "company": {
-      "name": "Considine-Lockman",
-      "catchPhrase": "Synchronised bottom-line interface",
-      "bs": "e-enable innovative applications"
-    }
-  },
-  {
+    "last_name": "Lawson",
     "id": 7,
-    "name": "Kurtis Weissnat",
-    "username": "Elwyn.Skiles",
-    "email": "Telly.Hoeger@billy.biz",
-    "address": {
-      "street": "Rex Trail",
-      "suite": "Suite 280",
-      "city": "Howemouth",
-      "zipcode": "58804-1099",
-      "geo": {
-        "lat": "24.8918",
-        "lng": "21.8984"
-      }
-    },
-    "phone": "210.067.6132",
-    "website": "elvis.io",
-    "company": {
-      "name": "Johns Group",
-      "catchPhrase": "Configurable multimedia task-force",
-      "bs": "generate enterprise e-tailers"
+    "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/follettkyle/128.jpg",
+    "first_name": "Michael",
+    "email": "michael.lawson@reqres.in"
+  },
+  {
+    "last_name": "Ferguson",
+    "id": 8,
+    "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/araa3185/128.jpg",
+    "first_name": "Lindsay",
+    "email": "lindsay.ferguson@reqres.in"
+  },
+  {
+    "last_name": "Funke",
+    "id": 9,
+    "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/vivekprvr/128.jpg",
+    "first_name": "Tobias",
+    "email": "tobias.funke@reqres.in"
+  },
+  {
+    "last_name": "Fields",
+    "id": 10,
+    "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/russoedu/128.jpg",
+    "first_name": "Byron",
+    "email": "byron.fields@reqres.in"
+  },
+  {
+    "last_name": "Edwards",
+    "id": 11,
+    "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg",
+    "first_name": "George",
+    "email": "george.edwards@reqres.in"
+  },
+  {
+    "last_name": "Howell",
+    "id": 12,
+    "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/hebertialmeida/128.jpg",
+    "first_name": "Rachel",
+    "email": "rachel.howell@reqres.in"
+  }
+]
+
+12:23:48.153 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+12:23:48.185 request:
+1 > GET https://reqres.in/api/users/23
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_91)
+
+12:23:48.676 response time in milliseconds: 489.86
+1 < 404
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: EXPIRED
+1 < CF-RAY: 58d1b73928bff40f-LHR
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Length: 2
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 02 May 2020 12:23:49 GMT
+1 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=dd07891293547f8b10e82f26fb28cb9af1588422229; expires=Mon, 01-Jun-20 12:23:49 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 0276f0d7b80000f40f4b986200000001
+{}
+
+12:23:48.678 status code was: 404, expected: 200, response time: 490, url: https://reqres.in/api/users/23, response: {}
+ps://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg"},"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}
+
+12:23:18.086 [print] id :  2
+12:23:18.108 [print] email id : janet.weaver@reqres.in
     }
   },
   {
