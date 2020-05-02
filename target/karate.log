@@ -1821,3 +1821,908 @@
 {}
 
 12:23:48.678 [main] ERROR com.intuit.karate - status code was: 404, expected: 200, response time: 490, url: https://reqres.in/api/users/23, response: {}
+12:31:43.077 [main] WARN  com.intuit.karate - skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+12:31:44.098 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users?page=2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_91)
+
+12:31:46.443 [main] DEBUG com.intuit.karate - response time in milliseconds: 2338.74
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 2192
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 58d1c2e3294cdbe3-LHR
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 02 May 2020 12:31:47 GMT
+1 < Etag: W/"4dd-IPv5LdOOb6s5S9E3i59wBCJ1k/0"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d6976474c6eae8d8a1b1437ca2198efdd1588422707; expires=Mon, 01-Jun-20 12:31:47 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 0276f821f90000dbe31a073200000001
+{"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/follettkyle/128.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/araa3185/128.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/vivekprvr/128.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/russoedu/128.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/hebertialmeida/128.jpg"}],"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}
+
+12:31:46.639 [main] INFO  com.intuit.karate - [print] data - > [
+  {
+    "last_name": "Lawson",
+    "id": 7,
+    "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/follettkyle/128.jpg",
+    "first_name": "Michael",
+    "email": "michael.lawson@reqres.in"
+  },
+  {
+    "last_name": "Ferguson",
+    "id": 8,
+    "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/araa3185/128.jpg",
+    "first_name": "Lindsay",
+    "email": "lindsay.ferguson@reqres.in"
+  },
+  {
+    "last_name": "Funke",
+    "id": 9,
+    "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/vivekprvr/128.jpg",
+    "first_name": "Tobias",
+    "email": "tobias.funke@reqres.in"
+  },
+  {
+    "last_name": "Fields",
+    "id": 10,
+    "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/russoedu/128.jpg",
+    "first_name": "Byron",
+    "email": "byron.fields@reqres.in"
+  },
+  {
+    "last_name": "Edwards",
+    "id": 11,
+    "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg",
+    "first_name": "George",
+    "email": "george.edwards@reqres.in"
+  },
+  {
+    "last_name": "Howell",
+    "id": 12,
+    "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/hebertialmeida/128.jpg",
+    "first_name": "Rachel",
+    "email": "rachel.howell@reqres.in"
+  }
+]
+
+12:31:46.675 [main] WARN  com.intuit.karate - skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+12:31:46.692 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/23
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_91)
+
+12:31:47.305 [main] DEBUG com.intuit.karate - response time in milliseconds: 611.41
+1 < 404
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: EXPIRED
+1 < CF-RAY: 58d1c2e8af4dbb9a-LHR
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Length: 2
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 02 May 2020 12:31:48 GMT
+1 < Etag: W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d0f1934146507c25aad913ee6db6d544c1588422708; expires=Mon, 01-Jun-20 12:31:48 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 0276f825690000bb9aa4972200000001
+{}
+
+12:31:47.307 [main] ERROR com.intuit.karate - status code was: 404, expected: 200, response time: 611, url: https://reqres.in/api/users/23, response: {}
+15:03:19.887 [main] WARN  com.intuit.karate - skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+15:03:20.731 [main] DEBUG com.intuit.karate - request:
+1 > POST https://graphql-pokemon.now.sh
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 175
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: graphql-pokemon.now.sh
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_91)
+{"query":"{\n  pokemon(name: \"Pikachu\") {\n    id\n    number\n    name\n    attacks {\n      special {\n        name\n        type\n        damage\n      }\n    }\n  }\n}"}
+
+15:03:22.385 [main] ERROR com.intuit.karate - javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target, http call failed after 1654 milliseconds for URL: https://graphql-pokemon.now.sh
+15:03:22.385 [main] ERROR com.intuit.karate - http request failed: 
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+15:03:22.699 [main] WARN  com.intuit.karate - skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+15:07:17.502 [main] WARN  com.intuit.karate - skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+15:07:18.427 [main] DEBUG com.intuit.karate - request:
+1 > POST https://graphql-pokemon.now.sh/graphql
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 175
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: graphql-pokemon.now.sh
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_91)
+{"query":"{\n  pokemon(name: \"Pikachu\") {\n    id\n    number\n    name\n    attacks {\n      special {\n        name\n        type\n        damage\n      }\n    }\n  }\n}"}
+
+15:07:20.203 [main] ERROR com.intuit.karate - javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target, http call failed after 1775 milliseconds for URL: https://graphql-pokemon.now.sh/graphql
+15:07:20.204 [main] ERROR com.intuit.karate - http request failed: 
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+15:07:20.578 [main] WARN  com.intuit.karate - skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+15:08:52.902 [main] WARN  com.intuit.karate - skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+15:08:53.718 [main] DEBUG com.intuit.karate - request:
+1 > POST http://graphql-pokemon.now.sh/graphql
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 175
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: graphql-pokemon.now.sh
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_91)
+{"query":"{\n  pokemon(name: \"Pikachu\") {\n    id\n    number\n    name\n    attacks {\n      special {\n        name\n        type\n        damage\n      }\n    }\n  }\n}"}
+
+15:08:54.415 [main] DEBUG com.intuit.karate - response time in milliseconds: 693.11
+1 < 308
+1 < Connection: keep-alive
+1 < Content-Type: text/plain
+1 < Date: Sat, 02 May 2020 15:08:55 GMT
+1 < Location: https://graphql-pokemon.now.sh/graphql
+1 < Refresh: 0;url=https://graphql-pokemon.now.sh/graphql
+1 < Transfer-Encoding: chunked
+1 < server: now
+1 < x-now-id: bom1::ll9jt-1588432135487-1224077282c7
+1 < x-now-trace: bom1
+1 < x-vercel-id: bom1::ll9jt-1588432135487-1224077282c7
+Redirecting to https://graphql-pokemon.now.sh/graphql (308)
+
+
+15:08:54.420 [main] ERROR com.intuit.karate - status code was: 308, expected: 200, response time: 693, url: http://graphql-pokemon.now.sh/graphql, response: Redirecting to https://graphql-pokemon.now.sh/graphql (308)
+
+15:08:54.883 [main] WARN  com.intuit.karate - skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+15:09:23.729 [main] WARN  com.intuit.karate - skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+15:09:24.556 [main] DEBUG com.intuit.karate - request:
+1 > POST http://graphql-pokemon.now.sh
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 175
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: graphql-pokemon.now.sh
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_91)
+{"query":"{\n  pokemon(name: \"Pikachu\") {\n    id\n    number\n    name\n    attacks {\n      special {\n        name\n        type\n        damage\n      }\n    }\n  }\n}"}
+
+15:09:24.612 [main] DEBUG com.intuit.karate - response time in milliseconds: 53.87
+1 < 308
+1 < Connection: keep-alive
+1 < Content-Type: text/plain
+1 < Date: Sat, 02 May 2020 15:09:25 GMT
+1 < Location: https://graphql-pokemon.now.sh/
+1 < Refresh: 0;url=https://graphql-pokemon.now.sh/
+1 < Transfer-Encoding: chunked
+1 < server: now
+1 < x-now-id: bom1::ddtg5-1588432165707-d7c2365bf6c3
+1 < x-now-trace: bom1
+1 < x-vercel-id: bom1::ddtg5-1588432165707-d7c2365bf6c3
+Redirecting to https://graphql-pokemon.now.sh/ (308)
+
+
+15:09:24.615 [main] ERROR com.intuit.karate - status code was: 308, expected: 200, response time: 54, url: http://graphql-pokemon.now.sh, response: Redirecting to https://graphql-pokemon.now.sh/ (308)
+
+15:09:24.780 [main] WARN  com.intuit.karate - skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+19:09:02.858 [main] ERROR com.intuit.karate.core.FeatureParser - syntax error: extraneous input '\n   \n   \n   \n   Examples:' expecting {<EOF>, SCENARIO, SCENARIO_OUTLINE, TAGS, NEWLINE}
+19:09:02.888 [main] ERROR com.intuit.karate.core.FeatureParser - not a valid feature file: classpath:examples/users/users.feature - extraneous input '\n   \n   \n   \n   Examples:' expecting {<EOF>, SCENARIO, SCENARIO_OUTLINE, TAGS, NEWLINE}
+19:09:45.861 [main] ERROR com.intuit.karate.core.FeatureParser - syntax error: extraneous input '\n   \n   \n   \n   Examples:' expecting {<EOF>, SCENARIO, SCENARIO_OUTLINE, TAGS, NEWLINE}
+19:09:45.876 [main] ERROR com.intuit.karate.core.FeatureParser - not a valid feature file: classpath:examples/users/users.feature - extraneous input '\n   \n   \n   \n   Examples:' expecting {<EOF>, SCENARIO, SCENARIO_OUTLINE, TAGS, NEWLINE}
+19:10:50.186 [main] WARN  com.intuit.karate - skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+19:10:51.223 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users?page=2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_91)
+
+19:10:52.575 [main] DEBUG com.intuit.karate - response time in milliseconds: 1339.07
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 4479
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 58d40b803ddd0722-LHR
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 02 May 2020 19:10:53 GMT
+1 < Etag: W/"4dd-IPv5LdOOb6s5S9E3i59wBCJ1k/0"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d2db7441e7bef35d505e91a45e1dea2561588446653; expires=Mon, 01-Jun-20 19:10:53 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 027865842400000722a132e200000001
+{"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/follettkyle/128.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/araa3185/128.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/vivekprvr/128.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/russoedu/128.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/hebertialmeida/128.jpg"}],"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}
+
+19:10:52.905 [main] INFO  com.intuit.karate - [print] data - > [
+  {
+    "last_name": "Lawson",
+    "id": 7,
+    "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/follettkyle/128.jpg",
+    "first_name": "Michael",
+    "email": "michael.lawson@reqres.in"
+  },
+  {
+    "last_name": "Ferguson",
+    "id": 8,
+    "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/araa3185/128.jpg",
+    "first_name": "Lindsay",
+    "email": "lindsay.ferguson@reqres.in"
+  },
+  {
+    "last_name": "Funke",
+    "id": 9,
+    "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/vivekprvr/128.jpg",
+    "first_name": "Tobias",
+    "email": "tobias.funke@reqres.in"
+  },
+  {
+    "last_name": "Fields",
+    "id": 10,
+    "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/russoedu/128.jpg",
+    "first_name": "Byron",
+    "email": "byron.fields@reqres.in"
+  },
+  {
+    "last_name": "Edwards",
+    "id": 11,
+    "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg",
+    "first_name": "George",
+    "email": "george.edwards@reqres.in"
+  },
+  {
+    "last_name": "Howell",
+    "id": 12,
+    "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/hebertialmeida/128.jpg",
+    "first_name": "Rachel",
+    "email": "rachel.howell@reqres.in"
+  }
+]
+
+19:10:52.961 [main] WARN  com.intuit.karate - skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+19:10:53.005 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/1
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_91)
+
+19:10:53.819 [main] DEBUG com.intuit.karate - response time in milliseconds: 811.52
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: REVALIDATED
+1 < CF-RAY: 58d40b882c1ae690-LHR
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 02 May 2020 19:10:54 GMT
+1 < Etag: W/"172-2ZZzAny/UrOMYxwGqcj81wSK1S4"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d425313c977df0943bfd2936235efaf521588446654; expires=Mon, 01-Jun-20 19:10:54 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 02786589140000e6905fb1e200000001
+{"data":{"id":1,"email":"george.bluth@reqres.in","first_name":"George","last_name":"Bluth","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/calebogden/128.jpg"},"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}
+
+19:10:53.842 [main] INFO  com.intuit.karate - [print] id :  1
+19:10:53.859 [main] INFO  com.intuit.karate - [print] email id : george.bluth@reqres.in
+19:10:53.890 [main] WARN  com.intuit.karate - skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+19:10:53.905 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_91)
+
+19:10:54.527 [main] DEBUG com.intuit.karate - response time in milliseconds: 619.63
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 2067
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 58d40b8cbf6b069e-LHR
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 02 May 2020 19:10:55 GMT
+1 < Etag: W/"173-1Z8bn0V7UjH6FK7NCaza1ccWXQk"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=dfefd656f5a944a819ace33a1b6b9a9dc1588446655; expires=Mon, 01-Jun-20 19:10:55 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 0278658bf50000069e42152200000001
+{"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg"},"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}
+
+19:10:54.542 [main] INFO  com.intuit.karate - [print] id :  2
+19:10:54.546 [main] INFO  com.intuit.karate - [print] email id : janet.weaver@reqres.in
+19:10:54.590 [main] WARN  com.intuit.karate - skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+19:10:54.617 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/3
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_91)
+
+19:10:55.034 [main] DEBUG com.intuit.karate - response time in milliseconds: 414.58
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 2067
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 58d40b8ffe99bc00-LHR
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 02 May 2020 19:10:55 GMT
+1 < Etag: W/"16e-/dQyOreIv6pEupp8RbP+u+utK/A"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=ddea7b985ec40d8da9db2b99ff76700131588446655; expires=Mon, 01-Jun-20 19:10:55 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 0278658df60000bc0035bd3200000001
+{"data":{"id":3,"email":"emma.wong@reqres.in","first_name":"Emma","last_name":"Wong","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/olegpogodaev/128.jpg"},"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}
+
+19:10:55.039 [main] INFO  com.intuit.karate - [print] id :  3
+19:10:55.042 [main] INFO  com.intuit.karate - [print] email id : emma.wong@reqres.in
+19:10:55.071 [main] WARN  com.intuit.karate - skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+19:10:55.087 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/4
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_91)
+
+19:10:55.510 [main] DEBUG com.intuit.karate - response time in milliseconds: 420.10
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 4054
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 58d40b92ee1cf3fb-LHR
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 02 May 2020 19:10:56 GMT
+1 < Etag: W/"16c-mIWNM4OngCynURuNYpc4udv7t7k"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d652146a663ef34f7119dec523be85be91588446656; expires=Mon, 01-Jun-20 19:10:56 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 0278658fd40000f3fbd20da200000001
+{"data":{"id":4,"email":"eve.holt@reqres.in","first_name":"Eve","last_name":"Holt","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/marcoramires/128.jpg"},"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}
+
+19:10:55.515 [main] INFO  com.intuit.karate - [print] id :  4
+19:10:55.518 [main] INFO  com.intuit.karate - [print] email id : eve.holt@reqres.in
+19:10:55.539 [main] WARN  com.intuit.karate - skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+19:10:55.554 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/5
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_91)
+
+19:10:56.200 [main] DEBUG com.intuit.karate - response time in milliseconds: 642.75
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: REVALIDATED
+1 < CF-RAY: 58d40b96fb51ce8b-LHR
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 02 May 2020 19:10:57 GMT
+1 < Etag: W/"177-mjjNxL3lmkUHZZzV/LAL61Zkg1Y"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=dcb93748dd424e67add8ef1c1c275e4251588446657; expires=Mon, 01-Jun-20 19:10:57 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 027865925e0000ce8b691b9200000001
+{"data":{"id":5,"email":"charles.morris@reqres.in","first_name":"Charles","last_name":"Morris","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/stephenmoon/128.jpg"},"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}
+
+19:10:56.208 [main] INFO  com.intuit.karate - [print] id :  5
+19:10:56.211 [main] INFO  com.intuit.karate - [print] email id : charles.morris@reqres.in
+19:10:56.237 [main] WARN  com.intuit.karate - skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+19:10:56.260 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/6
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_91)
+
+19:10:56.919 [main] DEBUG com.intuit.karate - response time in milliseconds: 657.19
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: REVALIDATED
+1 < CF-RAY: 58d40b9b8a36e624-LHR
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 02 May 2020 19:10:57 GMT
+1 < Etag: W/"171-RK8GOdO6tEbyyylSdadC1Y6UTGc"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d6452b947c70bcd41b2c21d54e63d92de1588446657; expires=Mon, 01-Jun-20 19:10:57 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 02786595330000e6242ba4f200000001
+{"data":{"id":6,"email":"tracey.ramos@reqres.in","first_name":"Tracey","last_name":"Ramos","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/bigmancho/128.jpg"},"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}
+
+19:10:56.931 [main] INFO  com.intuit.karate - [print] id :  6
+19:10:56.933 [main] INFO  com.intuit.karate - [print] email id : tracey.ramos@reqres.in
+19:10:56.965 [main] WARN  com.intuit.karate - skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+19:10:56.979 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/7
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_91)
+
+19:10:57.648 [main] DEBUG com.intuit.karate - response time in milliseconds: 667.25
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: REVALIDATED
+1 < CF-RAY: 58d40b9f681cdc3f-LHR
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 02 May 2020 19:10:58 GMT
+1 < Etag: W/"177-fGSlW9wHa6mgvsf6tGsV8zWQl+w"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=de2d5e801539d52ae53231a531351b5291588446658; expires=Mon, 01-Jun-20 19:10:58 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 027865979c0000dc3f08a2c200000001
+{"data":{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/follettkyle/128.jpg"},"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}
+
+19:10:57.660 [main] INFO  com.intuit.karate - [print] id :  7
+19:10:57.667 [main] INFO  com.intuit.karate - [print] email id : michael.lawson@reqres.in
+19:10:57.699 [main] WARN  com.intuit.karate - skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+19:10:57.712 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/8
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_91)
+
+19:10:58.161 [main] DEBUG com.intuit.karate - response time in milliseconds: 447.71
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: REVALIDATED
+1 < CF-RAY: 58d40ba34b8935e8-LHR
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 02 May 2020 19:10:59 GMT
+1 < Etag: W/"178-tTqXTTc/NnA03LicI+yUfgPh+bQ"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=da3cc9444a42294ffc1699795ee780b3d1588446659; expires=Mon, 01-Jun-20 19:10:59 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 0278659a0b000035e8a8184200000001
+{"data":{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/araa3185/128.jpg"},"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}
+
+19:10:58.176 [main] INFO  com.intuit.karate - [print] id :  8
+19:10:58.180 [main] INFO  com.intuit.karate - [print] email id : lindsay.ferguson@reqres.in
+19:10:58.212 [main] WARN  com.intuit.karate - skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+19:10:58.234 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/9
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_91)
+
+19:10:59.400 [main] DEBUG com.intuit.karate - response time in milliseconds: 1163.43
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: REVALIDATED
+1 < CF-RAY: 58d40baa598de624-LHR
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 02 May 2020 19:11:00 GMT
+1 < Etag: W/"171-W8NW/a10i/az6UFM+JoiwKbYP+E"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d8663dca24b1ea1486a48dae387530acc1588446660; expires=Mon, 01-Jun-20 19:11:00 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 0278659e740000e6242c97d200000001
+{"data":{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/vivekprvr/128.jpg"},"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}
+
+19:10:59.406 [main] INFO  com.intuit.karate - [print] id :  9
+19:10:59.409 [main] INFO  com.intuit.karate - [print] email id : tobias.funke@reqres.in
+19:13:08.697 [main] WARN  com.intuit.karate - skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+19:13:09.674 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users?page=2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_91)
+1 > content-type: aplication/json
+
+19:13:10.644 [main] DEBUG com.intuit.karate - response time in milliseconds: 960.75
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 4617
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 58d40edf2c000702-LHR
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 02 May 2020 19:13:11 GMT
+1 < Etag: W/"4dd-IPv5LdOOb6s5S9E3i59wBCJ1k/0"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=dae37a812712fec7e48302d32884db7811588446791; expires=Mon, 01-Jun-20 19:13:11 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 0278679f7500000702e5921200000001
+{"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/follettkyle/128.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/araa3185/128.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/vivekprvr/128.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/russoedu/128.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/hebertialmeida/128.jpg"}],"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}
+
+19:13:10.911 [main] INFO  com.intuit.karate - [print] data - > [
+  {
+    "last_name": "Lawson",
+    "id": 7,
+    "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/follettkyle/128.jpg",
+    "first_name": "Michael",
+    "email": "michael.lawson@reqres.in"
+  },
+  {
+    "last_name": "Ferguson",
+    "id": 8,
+    "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/araa3185/128.jpg",
+    "first_name": "Lindsay",
+    "email": "lindsay.ferguson@reqres.in"
+  },
+  {
+    "last_name": "Funke",
+    "id": 9,
+    "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/vivekprvr/128.jpg",
+    "first_name": "Tobias",
+    "email": "tobias.funke@reqres.in"
+  },
+  {
+    "last_name": "Fields",
+    "id": 10,
+    "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/russoedu/128.jpg",
+    "first_name": "Byron",
+    "email": "byron.fields@reqres.in"
+  },
+  {
+    "last_name": "Edwards",
+    "id": 11,
+    "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg",
+    "first_name": "George",
+    "email": "george.edwards@reqres.in"
+  },
+  {
+    "last_name": "Howell",
+    "id": 12,
+    "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/hebertialmeida/128.jpg",
+    "first_name": "Rachel",
+    "email": "rachel.howell@reqres.in"
+  }
+]
+
+19:13:10.933 [main] WARN  com.intuit.karate - skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+19:13:10.946 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/1
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_91)
+1 > content-type: aplication/json
+
+19:13:11.391 [main] DEBUG com.intuit.karate - response time in milliseconds: 442.64
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 138
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 58d40ee42fb9e660-LHR
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 02 May 2020 19:13:12 GMT
+1 < Etag: W/"172-2ZZzAny/UrOMYxwGqcj81wSK1S4"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=de665602cba7c60c5248946582e994e041588446792; expires=Mon, 01-Jun-20 19:13:12 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 027867a29b0000e660cd83c200000001
+{"data":{"id":1,"email":"george.bluth@reqres.in","first_name":"George","last_name":"Bluth","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/calebogden/128.jpg"},"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}
+
+19:13:11.444 [main] INFO  com.intuit.karate - [print] id :  1
+19:13:11.473 [main] INFO  com.intuit.karate - [print] email id : george.bluth@reqres.in
+19:13:11.505 [main] WARN  com.intuit.karate - skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+19:13:11.512 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/2
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_91)
+1 > content-type: aplication/json
+
+19:13:11.971 [main] DEBUG com.intuit.karate - response time in milliseconds: 456.61
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 2204
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 58d40ee7cc8ee674-LHR
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 02 May 2020 19:13:12 GMT
+1 < Etag: W/"173-1Z8bn0V7UjH6FK7NCaza1ccWXQk"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=de6ca3c04014e9ce626c9644d1b404d741588446792; expires=Mon, 01-Jun-20 19:13:12 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 027867a4de0000e6748c9bd200000001
+{"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg"},"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}
+
+19:13:11.980 [main] INFO  com.intuit.karate - [print] id :  2
+19:13:11.983 [main] INFO  com.intuit.karate - [print] email id : janet.weaver@reqres.in
+19:13:12.039 [main] WARN  com.intuit.karate - skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+19:13:12.056 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/3
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_91)
+1 > content-type: aplication/json
+
+19:13:12.485 [main] DEBUG com.intuit.karate - response time in milliseconds: 427.44
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 2205
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 58d40eeb0cf507a2-LHR
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 02 May 2020 19:13:13 GMT
+1 < Etag: W/"16e-/dQyOreIv6pEupp8RbP+u+utK/A"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=dead6ab9bac9842f51fd6a9117c3bafed1588446793; expires=Mon, 01-Jun-20 19:13:13 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 027867a6e7000007a2d63ee200000001
+{"data":{"id":3,"email":"emma.wong@reqres.in","first_name":"Emma","last_name":"Wong","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/olegpogodaev/128.jpg"},"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}
+
+19:13:12.491 [main] INFO  com.intuit.karate - [print] id :  3
+19:13:12.494 [main] INFO  com.intuit.karate - [print] email id : emma.wong@reqres.in
+19:13:12.514 [main] WARN  com.intuit.karate - skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+19:13:12.529 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/4
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_91)
+1 > content-type: aplication/json
+
+19:13:12.953 [main] DEBUG com.intuit.karate - response time in milliseconds: 421.37
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 4191
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 58d40eedfee9e640-LHR
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 02 May 2020 19:13:13 GMT
+1 < Etag: W/"16c-mIWNM4OngCynURuNYpc4udv7t7k"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d2512910ded83dde5bce47ce868f638791588446793; expires=Mon, 01-Jun-20 19:13:13 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 027867a8b60000e64087835200000001
+{"data":{"id":4,"email":"eve.holt@reqres.in","first_name":"Eve","last_name":"Holt","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/marcoramires/128.jpg"},"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}
+
+19:13:12.958 [main] INFO  com.intuit.karate - [print] id :  4
+19:13:12.960 [main] INFO  com.intuit.karate - [print] email id : eve.holt@reqres.in
+19:13:12.979 [main] WARN  com.intuit.karate - skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+19:13:12.992 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/5
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_91)
+1 > content-type: aplication/json
+
+19:13:13.454 [main] DEBUG com.intuit.karate - response time in milliseconds: 459.50
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 137
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 58d40ef11a59074e-LHR
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 02 May 2020 19:13:14 GMT
+1 < Etag: W/"177-mjjNxL3lmkUHZZzV/LAL61Zkg1Y"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d551fa985f71d3c9040b6a3c64179e15d1588446794; expires=Mon, 01-Jun-20 19:13:14 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 027867aab00000074e9eaed200000001
+{"data":{"id":5,"email":"charles.morris@reqres.in","first_name":"Charles","last_name":"Morris","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/stephenmoon/128.jpg"},"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}
+
+19:13:13.459 [main] INFO  com.intuit.karate - [print] id :  5
+19:13:13.462 [main] INFO  com.intuit.karate - [print] email id : charles.morris@reqres.in
+19:13:13.481 [main] WARN  com.intuit.karate - skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+19:13:13.494 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/6
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_91)
+1 > content-type: aplication/json
+
+19:13:13.928 [main] DEBUG com.intuit.karate - response time in milliseconds: 432.09
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 137
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 58d40ef41af4e62c-LHR
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 02 May 2020 19:13:14 GMT
+1 < Etag: W/"171-RK8GOdO6tEbyyylSdadC1Y6UTGc"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=da35b82861a67f76eef1a3e086dc6a2e21588446794; expires=Mon, 01-Jun-20 19:13:14 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 027867ac8b0000e62cadac0200000001
+{"data":{"id":6,"email":"tracey.ramos@reqres.in","first_name":"Tracey","last_name":"Ramos","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/bigmancho/128.jpg"},"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}
+
+19:13:13.934 [main] INFO  com.intuit.karate - [print] id :  6
+19:13:13.937 [main] INFO  com.intuit.karate - [print] email id : tracey.ramos@reqres.in
+19:13:13.963 [main] WARN  com.intuit.karate - skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+19:13:13.978 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/7
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_91)
+1 > content-type: aplication/json
+
+19:13:14.406 [main] DEBUG com.intuit.karate - response time in milliseconds: 425.87
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 137
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 58d40ef7092f073a-LHR
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 02 May 2020 19:13:15 GMT
+1 < Etag: W/"177-fGSlW9wHa6mgvsf6tGsV8zWQl+w"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=dfdd85a9c05cf66df9ce5b05384da41b81588446795; expires=Mon, 01-Jun-20 19:13:15 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 027867ae670000073a3ab38200000001
+{"data":{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/follettkyle/128.jpg"},"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}
+
+19:13:14.421 [main] INFO  com.intuit.karate - [print] id :  7
+19:13:14.433 [main] INFO  com.intuit.karate - [print] email id : michael.lawson@reqres.in
+19:13:14.468 [main] WARN  com.intuit.karate - skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+19:13:14.490 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/8
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_91)
+1 > content-type: aplication/json
+
+19:13:15.077 [main] DEBUG com.intuit.karate - response time in milliseconds: 584.43
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 137
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 58d40efb38aa0796-LHR
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 02 May 2020 19:13:16 GMT
+1 < Etag: W/"178-tTqXTTc/NnA03LicI+yUfgPh+bQ"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=ddf08a4152c19c247de45958f4d32b3c51588446796; expires=Mon, 01-Jun-20 19:13:16 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 027867b1070000079658207200000001
+{"data":{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/araa3185/128.jpg"},"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}
+
+19:13:15.089 [main] INFO  com.intuit.karate - [print] id :  8
+19:13:15.094 [main] INFO  com.intuit.karate - [print] email id : lindsay.ferguson@reqres.in
+19:13:15.119 [main] WARN  com.intuit.karate - skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+19:13:15.136 [main] DEBUG com.intuit.karate - request:
+1 > GET https://reqres.in/api/users/9
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_91)
+1 > content-type: aplication/json
+
+19:13:15.552 [main] DEBUG com.intuit.karate - response time in milliseconds: 413.85
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 136
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 58d40efe3d7be668-LHR
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sat, 02 May 2020 19:13:16 GMT
+1 < Etag: W/"171-W8NW/a10i/az6UFM+JoiwKbYP+E"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d4f82edfe45b90a0775727edb9f9c49c61588446796; expires=Mon, 01-Jun-20 19:13:16 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 027867b2e10000e668b58e2200000001
+{"data":{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/vivekprvr/128.jpg"},"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}
+
+19:13:15.568 [main] INFO  com.intuit.karate - [print] id :  9
+19:13:15.571 [main] INFO  com.intuit.karate - [print] email id : tobias.funke@reqres.in

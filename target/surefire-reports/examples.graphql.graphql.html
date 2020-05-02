@@ -45,7 +45,7 @@
   .embed img { width: 100%; }
 </style>
 
-<title>examples.users.users</title>
+<title>examples.graphql.graphql</title>
 <script>window.onload = function() {
   var possibleModes = ['failed', 'skipped', 'passed'];
   var tests = {};
@@ -168,725 +168,206 @@
 </img><div>
 <div class="scenario">
 <div class="scenario-heading">
-<span class="scenario-keyword">Scenario: [1:9]</span><span class="scenario-name">get user of with total number of 2 pages</span>
+<span class="scenario-keyword">Scenario: [1:8]</span><span class="scenario-name">simple graphql request</span>
 </div>
 <div class="step-row">
-<div class="step-cell passed">* url 'https://reqres.in/api'</div>
-<div class="time-cell passed">0.00713</div>
+<div class="step-cell passed">* url 'http://graphql-pokemon.now.sh'</div>
+<div class="time-cell passed">0.008291</div>
 </div>
-<div class="preformatted">19:13:08.704 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="preformatted">15:09:23.736 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
 <div class="step-row">
-<div class="step-cell passed">* header content-type = 'aplication/json'</div>
-<div class="time-cell passed">0.005231</div>
+<div class="step-cell passed">Given text query =</div>
+<div class="time-cell passed">0.002378</div>
 </div>
-<div class="step-row">
-<div class="step-cell passed">Given path 'users'</div>
-<div class="time-cell passed">0.00927</div>
-</div>
-<div class="step-row">
-<div class="step-cell passed">And param page = 2</div>
-<div class="time-cell passed">0.010394</div>
-</div>
-<div class="step-row">
-<div class="step-cell passed">When method get</div>
-<div class="time-cell passed">2.059129</div>
-</div>
-<div class="preformatted">19:13:09.675 request:
-1 &gt; GET https://reqres.in/api/users?page=2
-1 &gt; Accept-Encoding: gzip,deflate
-1 &gt; Connection: Keep-Alive
-1 &gt; Host: reqres.in
-1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_91)
-1 &gt; content-type: aplication/json
-
-19:13:10.644 response time in milliseconds: 960.75
-1 &lt; 200
-1 &lt; Access-Control-Allow-Origin: *
-1 &lt; Age: 4617
-1 &lt; CF-Cache-Status: HIT
-1 &lt; CF-RAY: 58d40edf2c000702-LHR
-1 &lt; Cache-Control: max-age=14400
-1 &lt; Connection: keep-alive
-1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Sat, 02 May 2020 19:13:11 GMT
-1 &lt; Etag: W/"4dd-IPv5LdOOb6s5S9E3i59wBCJ1k/0"
-1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 &lt; Server: cloudflare
-1 &lt; Set-Cookie: __cfduid=dae37a812712fec7e48302d32884db7811588446791; expires=Mon, 01-Jun-20 19:13:11 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Vary: Accept-Encoding
-1 &lt; Via: 1.1 vegur
-1 &lt; X-Powered-By: Express
-1 &lt; cf-request-id: 0278679f7500000702e5921200000001
-{"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/follettkyle/128.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/araa3185/128.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/vivekprvr/128.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/russoedu/128.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/hebertialmeida/128.jpg"}],"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}</div>
-<div class="step-row">
-<div class="step-cell passed">Then status 200</div>
-<div class="time-cell passed">0.000047</div>
-</div>
-<div class="step-row">
-<div class="step-cell passed">* def data = response.data</div>
-<div class="time-cell passed">0.070257</div>
-</div>
-<div class="step-row">
-<div class="step-cell passed">* print 'data - &gt;',data</div>
-<div class="time-cell passed">0.008399</div>
-</div>
-<div class="preformatted">19:13:10.911 [print] data - &gt; [
-  {
-    "last_name": "Lawson",
-    "id": 7,
-    "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/follettkyle/128.jpg",
-    "first_name": "Michael",
-    "email": "michael.lawson@reqres.in"
-  },
-  {
-    "last_name": "Ferguson",
-    "id": 8,
-    "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/araa3185/128.jpg",
-    "first_name": "Lindsay",
-    "email": "lindsay.ferguson@reqres.in"
-  },
-  {
-    "last_name": "Funke",
-    "id": 9,
-    "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/vivekprvr/128.jpg",
-    "first_name": "Tobias",
-    "email": "tobias.funke@reqres.in"
-  },
-  {
-    "last_name": "Fields",
-    "id": 10,
-    "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/russoedu/128.jpg",
-    "first_name": "Byron",
-    "email": "byron.fields@reqres.in"
-  },
-  {
-    "last_name": "Edwards",
-    "id": 11,
-    "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg",
-    "first_name": "George",
-    "email": "george.edwards@reqres.in"
-  },
-  {
-    "last_name": "Howell",
-    "id": 12,
-    "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/hebertialmeida/128.jpg",
-    "first_name": "Rachel",
-    "email": "rachel.howell@reqres.in"
+<div class="preformatted">{
+  pokemon(name: "Pikachu") {
+    id
+    number
+    name
+    attacks {
+      special {
+        name
+        type
+        damage
+      }
+    }
   }
-]</div>
+}</div>
+<div class="step-row">
+<div class="step-cell passed">And request { query: '#(query)' }</div>
+<div class="time-cell passed">0.155375</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">When method post</div>
+<div class="time-cell passed">0.691851</div>
+</div>
+<div class="preformatted">15:09:24.556 request:
+1 &gt; POST http://graphql-pokemon.now.sh
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 175
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: graphql-pokemon.now.sh
+1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_91)
+{"query":"{\n  pokemon(name: \"Pikachu\") {\n    id\n    number\n    name\n    attacks {\n      special {\n        name\n        type\n        damage\n      }\n    }\n  }\n}"}
+
+15:09:24.612 response time in milliseconds: 53.87
+1 &lt; 308
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: text/plain
+1 &lt; Date: Sat, 02 May 2020 15:09:25 GMT
+1 &lt; Location: https://graphql-pokemon.now.sh/
+1 &lt; Refresh: 0;url=https://graphql-pokemon.now.sh/
+1 &lt; Transfer-Encoding: chunked
+1 &lt; server: now
+1 &lt; x-now-id: bom1::ddtg5-1588432165707-d7c2365bf6c3
+1 &lt; x-now-trace: bom1
+1 &lt; x-vercel-id: bom1::ddtg5-1588432165707-d7c2365bf6c3
+Redirecting to https://graphql-pokemon.now.sh/ (308)</div>
+<div class="step-row">
+<div class="step-cell failed">Then status 200</div>
+<div class="time-cell failed">0.000573</div>
+</div>
+<div class="preformatted">15:09:24.615 status code was: 308, expected: 200, response time: 54, url: http://graphql-pokemon.now.sh, response: Redirecting to https://graphql-pokemon.now.sh/ (308)
+graphql.feature:29 - status code was: 308, expected: 200, response time: 54, url: http://graphql-pokemon.now.sh, response: Redirecting to https://graphql-pokemon.now.sh/ (308)
+</div>
+<div class="step-row">
+<div class="step-cell skipped">* print 'response:', response</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="step-row">
+<div class="step-cell skipped">* match $.data.pokemon.number == '025'</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="step-row">
+<div class="step-cell skipped">* def attacks = get[0] response..special</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="step-row">
+<div class="step-cell skipped">* match attacks contains { name: 'Thunderbolt', type: 'Electric', damage: 55 }</div>
+<div class="time-cell skipped">0</div>
+</div>
 </div>
 <div class="scenario">
 <div class="scenario-heading">
-<span class="scenario-keyword">Scenario Outline: [2.1:31]</span><span class="scenario-name">get user with id 1</span>
+<span class="scenario-keyword">Scenario: [1:8]</span><span class="scenario-name">simple graphql request</span>
 </div>
 <div class="step-row">
-<div class="step-cell passed">* url 'https://reqres.in/api'</div>
-<div class="time-cell passed">0.000419</div>
+<div class="step-cell passed">* url 'http://graphql-pokemon.now.sh'</div>
+<div class="time-cell passed">0.008291</div>
 </div>
-<div class="preformatted">19:13:10.934 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="preformatted">15:09:23.736 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
 <div class="step-row">
-<div class="step-cell passed">* header content-type = 'aplication/json'</div>
-<div class="time-cell passed">0.000306</div>
+<div class="step-cell passed">Given text query =</div>
+<div class="time-cell passed">0.002378</div>
+</div>
+<div class="preformatted">{
+  pokemon(name: "Pikachu") {
+    id
+    number
+    name
+    attacks {
+      special {
+        name
+        type
+        damage
+      }
+    }
+  }
+}</div>
+<div class="step-row">
+<div class="step-cell passed">And request { query: '#(query)' }</div>
+<div class="time-cell passed">0.155375</div>
 </div>
 <div class="step-row">
-<div class="step-cell passed">Given path 'users',1</div>
-<div class="time-cell passed">0.006125</div>
+<div class="step-cell passed">When method post</div>
+<div class="time-cell passed">0.691851</div>
 </div>
-<div class="step-row">
-<div class="step-cell passed">When method get</div>
-<div class="time-cell passed">0.449359</div>
-</div>
-<div class="preformatted">19:13:10.946 request:
-1 &gt; GET https://reqres.in/api/users/1
+<div class="preformatted">15:09:24.556 request:
+1 &gt; POST http://graphql-pokemon.now.sh
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
-1 &gt; Host: reqres.in
+1 &gt; Content-Length: 175
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: graphql-pokemon.now.sh
 1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_91)
-1 &gt; content-type: aplication/json
+{"query":"{\n  pokemon(name: \"Pikachu\") {\n    id\n    number\n    name\n    attacks {\n      special {\n        name\n        type\n        damage\n      }\n    }\n  }\n}"}
 
-19:13:11.391 response time in milliseconds: 442.64
-1 &lt; 200
-1 &lt; Access-Control-Allow-Origin: *
-1 &lt; Age: 138
-1 &lt; CF-Cache-Status: HIT
-1 &lt; CF-RAY: 58d40ee42fb9e660-LHR
-1 &lt; Cache-Control: max-age=14400
+15:09:24.612 response time in milliseconds: 53.87
+1 &lt; 308
 1 &lt; Connection: keep-alive
-1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Sat, 02 May 2020 19:13:12 GMT
-1 &lt; Etag: W/"172-2ZZzAny/UrOMYxwGqcj81wSK1S4"
-1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 &lt; Server: cloudflare
-1 &lt; Set-Cookie: __cfduid=de665602cba7c60c5248946582e994e041588446792; expires=Mon, 01-Jun-20 19:13:12 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 &lt; Content-Type: text/plain
+1 &lt; Date: Sat, 02 May 2020 15:09:25 GMT
+1 &lt; Location: https://graphql-pokemon.now.sh/
+1 &lt; Refresh: 0;url=https://graphql-pokemon.now.sh/
 1 &lt; Transfer-Encoding: chunked
-1 &lt; Vary: Accept-Encoding
-1 &lt; Via: 1.1 vegur
-1 &lt; X-Powered-By: Express
-1 &lt; cf-request-id: 027867a29b0000e660cd83c200000001
-{"data":{"id":1,"email":"george.bluth@reqres.in","first_name":"George","last_name":"Bluth","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/calebogden/128.jpg"},"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}</div>
+1 &lt; server: now
+1 &lt; x-now-id: bom1::ddtg5-1588432165707-d7c2365bf6c3
+1 &lt; x-now-trace: bom1
+1 &lt; x-vercel-id: bom1::ddtg5-1588432165707-d7c2365bf6c3
+Redirecting to https://graphql-pokemon.now.sh/ (308)</div>
 <div class="step-row">
-<div class="step-cell passed">Then status 200</div>
-<div class="time-cell passed">0.000039</div>
+<div class="step-cell failed">Then status 200</div>
+<div class="time-cell failed">0.000573</div>
+</div>
+<div class="preformatted">15:09:24.615 status code was: 308, expected: 200, response time: 54, url: http://graphql-pokemon.now.sh, response: Redirecting to https://graphql-pokemon.now.sh/ (308)
+graphql.feature:29 - status code was: 308, expected: 200, response time: 54, url: http://graphql-pokemon.now.sh, response: Redirecting to https://graphql-pokemon.now.sh/ (308)
 </div>
 <div class="step-row">
-<div class="step-cell passed">* def data = response.data</div>
-<div class="time-cell passed">0.002046</div>
+<div class="step-cell skipped">* print 'response:', response</div>
+<div class="time-cell skipped">0</div>
 </div>
 <div class="step-row">
-<div class="step-cell passed">* print 'id : ',data.id</div>
-<div class="time-cell passed">0.032488</div>
+<div class="step-cell skipped">* match $.data.pokemon.number == '025'</div>
+<div class="time-cell skipped">0</div>
 </div>
-<div class="preformatted">19:13:11.445 [print] id :  1</div>
 <div class="step-row">
-<div class="step-cell passed">* print 'email id :',data.email</div>
-<div class="time-cell passed">0.026844</div>
+<div class="step-cell skipped">* def attacks = get[0] response..special</div>
+<div class="time-cell skipped">0</div>
 </div>
-<div class="preformatted">19:13:11.473 [print] email id : george.bluth@reqres.in</div>
+<div class="step-row">
+<div class="step-cell skipped">* match attacks contains { name: 'Thunderbolt', type: 'Electric', damage: 55 }</div>
+<div class="time-cell skipped">0</div>
+</div>
 </div>
 <div class="scenario">
 <div class="scenario-heading">
-<span class="scenario-keyword">Scenario Outline: [2.2:32]</span><span class="scenario-name">get user with id 2</span>
+<span class="scenario-keyword">Scenario: [2:43]</span><span class="scenario-name">graphql from a file and variables</span>
 </div>
 <div class="step-row">
-<div class="step-cell passed">* url 'https://reqres.in/api'</div>
-<div class="time-cell passed">0.000558</div>
+<div class="step-cell passed">* url 'http://graphql-pokemon.now.sh'</div>
+<div class="time-cell passed">0.00029</div>
 </div>
-<div class="preformatted">19:13:11.505 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="preformatted">15:09:24.780 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
 <div class="step-row">
-<div class="step-cell passed">* header content-type = 'aplication/json'</div>
-<div class="time-cell passed">0.000383</div>
+<div class="step-cell failed">Given def query = read('temp .graphql')</div>
+<div class="time-cell failed">0.00725</div>
 </div>
+<div class="preformatted">graphql.feature:46 - could not find or read file: temp .graphql</div>
 <div class="step-row">
-<div class="step-cell passed">Given path 'users',2</div>
-<div class="time-cell passed">0.000654</div>
+<div class="step-cell skipped">And def variables = { name: 'Charmander' }</div>
+<div class="time-cell skipped">0</div>
 </div>
 <div class="step-row">
-<div class="step-cell passed">When method get</div>
-<div class="time-cell passed">0.464502</div>
+<div class="step-cell skipped">And request { query: '#(query)', variables: '#(variables)' }</div>
+<div class="time-cell skipped">0</div>
 </div>
-<div class="preformatted">19:13:11.512 request:
-1 &gt; GET https://reqres.in/api/users/2
-1 &gt; Accept-Encoding: gzip,deflate
-1 &gt; Connection: Keep-Alive
-1 &gt; Host: reqres.in
-1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_91)
-1 &gt; content-type: aplication/json
-
-19:13:11.971 response time in milliseconds: 456.61
-1 &lt; 200
-1 &lt; Access-Control-Allow-Origin: *
-1 &lt; Age: 2204
-1 &lt; CF-Cache-Status: HIT
-1 &lt; CF-RAY: 58d40ee7cc8ee674-LHR
-1 &lt; Cache-Control: max-age=14400
-1 &lt; Connection: keep-alive
-1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Sat, 02 May 2020 19:13:12 GMT
-1 &lt; Etag: W/"173-1Z8bn0V7UjH6FK7NCaza1ccWXQk"
-1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 &lt; Server: cloudflare
-1 &lt; Set-Cookie: __cfduid=de6ca3c04014e9ce626c9644d1b404d741588446792; expires=Mon, 01-Jun-20 19:13:12 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Vary: Accept-Encoding
-1 &lt; Via: 1.1 vegur
-1 &lt; X-Powered-By: Express
-1 &lt; cf-request-id: 027867a4de0000e6748c9bd200000001
-{"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg"},"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}</div>
 <div class="step-row">
-<div class="step-cell passed">Then status 200</div>
-<div class="time-cell passed">0.000029</div>
+<div class="step-cell skipped">When method post</div>
+<div class="time-cell skipped">0</div>
 </div>
 <div class="step-row">
-<div class="step-cell passed">* def data = response.data</div>
-<div class="time-cell passed">0.002485</div>
+<div class="step-cell skipped">Then status 200</div>
+<div class="time-cell skipped">0</div>
 </div>
 <div class="step-row">
-<div class="step-cell passed">* print 'id : ',data.id</div>
-<div class="time-cell passed">0.00429</div>
+<div class="step-cell skipped">* def expected = [{ name: 'Flamethrower', type: 'Fire', damage: 55 }, { name: 'Flame Charge', type: 'Fire', damage: 25 }]</div>
+<div class="time-cell skipped">0</div>
 </div>
-<div class="preformatted">19:13:11.980 [print] id :  2</div>
 <div class="step-row">
-<div class="step-cell passed">* print 'email id :',data.email</div>
-<div class="time-cell passed">0.003686</div>
+<div class="step-cell skipped">* match $.data.pokemon contains { number: '004', name: 'Charmander', attacks: { special: '#(^expected)' } }</div>
+<div class="time-cell skipped">0</div>
 </div>
-<div class="preformatted">19:13:11.984 [print] email id : janet.weaver@reqres.in</div>
-</div>
-<div class="scenario">
-<div class="scenario-heading">
-<span class="scenario-keyword">Scenario Outline: [2.3:33]</span><span class="scenario-name">get user with id 3</span>
-</div>
-<div class="step-row">
-<div class="step-cell passed">* url 'https://reqres.in/api'</div>
-<div class="time-cell passed">0.001021</div>
-</div>
-<div class="preformatted">19:13:12.040 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
-<div class="step-row">
-<div class="step-cell passed">* header content-type = 'aplication/json'</div>
-<div class="time-cell passed">0.00043</div>
-</div>
-<div class="step-row">
-<div class="step-cell passed">Given path 'users',3</div>
-<div class="time-cell passed">0.008731</div>
-</div>
-<div class="step-row">
-<div class="step-cell passed">When method get</div>
-<div class="time-cell passed">0.434286</div>
-</div>
-<div class="preformatted">19:13:12.056 request:
-1 &gt; GET https://reqres.in/api/users/3
-1 &gt; Accept-Encoding: gzip,deflate
-1 &gt; Connection: Keep-Alive
-1 &gt; Host: reqres.in
-1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_91)
-1 &gt; content-type: aplication/json
-
-19:13:12.486 response time in milliseconds: 427.44
-1 &lt; 200
-1 &lt; Access-Control-Allow-Origin: *
-1 &lt; Age: 2205
-1 &lt; CF-Cache-Status: HIT
-1 &lt; CF-RAY: 58d40eeb0cf507a2-LHR
-1 &lt; Cache-Control: max-age=14400
-1 &lt; Connection: keep-alive
-1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Sat, 02 May 2020 19:13:13 GMT
-1 &lt; Etag: W/"16e-/dQyOreIv6pEupp8RbP+u+utK/A"
-1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 &lt; Server: cloudflare
-1 &lt; Set-Cookie: __cfduid=dead6ab9bac9842f51fd6a9117c3bafed1588446793; expires=Mon, 01-Jun-20 19:13:13 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Vary: Accept-Encoding
-1 &lt; Via: 1.1 vegur
-1 &lt; X-Powered-By: Express
-1 &lt; cf-request-id: 027867a6e7000007a2d63ee200000001
-{"data":{"id":3,"email":"emma.wong@reqres.in","first_name":"Emma","last_name":"Wong","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/olegpogodaev/128.jpg"},"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}</div>
-<div class="step-row">
-<div class="step-cell passed">Then status 200</div>
-<div class="time-cell passed">0.00003</div>
-</div>
-<div class="step-row">
-<div class="step-cell passed">* def data = response.data</div>
-<div class="time-cell passed">0.001957</div>
-</div>
-<div class="step-row">
-<div class="step-cell passed">* print 'id : ',data.id</div>
-<div class="time-cell passed">0.002684</div>
-</div>
-<div class="preformatted">19:13:12.492 [print] id :  3</div>
-<div class="step-row">
-<div class="step-cell passed">* print 'email id :',data.email</div>
-<div class="time-cell passed">0.002333</div>
-</div>
-<div class="preformatted">19:13:12.494 [print] email id : emma.wong@reqres.in</div>
-</div>
-<div class="scenario">
-<div class="scenario-heading">
-<span class="scenario-keyword">Scenario Outline: [2.4:34]</span><span class="scenario-name">get user with id 4</span>
-</div>
-<div class="step-row">
-<div class="step-cell passed">* url 'https://reqres.in/api'</div>
-<div class="time-cell passed">0.000461</div>
-</div>
-<div class="preformatted">19:13:12.515 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
-<div class="step-row">
-<div class="step-cell passed">* header content-type = 'aplication/json'</div>
-<div class="time-cell passed">0.001066</div>
-</div>
-<div class="step-row">
-<div class="step-cell passed">Given path 'users',4</div>
-<div class="time-cell passed">0.008147</div>
-</div>
-<div class="step-row">
-<div class="step-cell passed">When method get</div>
-<div class="time-cell passed">0.42822</div>
-</div>
-<div class="preformatted">19:13:12.530 request:
-1 &gt; GET https://reqres.in/api/users/4
-1 &gt; Accept-Encoding: gzip,deflate
-1 &gt; Connection: Keep-Alive
-1 &gt; Host: reqres.in
-1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_91)
-1 &gt; content-type: aplication/json
-
-19:13:12.953 response time in milliseconds: 421.37
-1 &lt; 200
-1 &lt; Access-Control-Allow-Origin: *
-1 &lt; Age: 4191
-1 &lt; CF-Cache-Status: HIT
-1 &lt; CF-RAY: 58d40eedfee9e640-LHR
-1 &lt; Cache-Control: max-age=14400
-1 &lt; Connection: keep-alive
-1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Sat, 02 May 2020 19:13:13 GMT
-1 &lt; Etag: W/"16c-mIWNM4OngCynURuNYpc4udv7t7k"
-1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 &lt; Server: cloudflare
-1 &lt; Set-Cookie: __cfduid=d2512910ded83dde5bce47ce868f638791588446793; expires=Mon, 01-Jun-20 19:13:13 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Vary: Accept-Encoding
-1 &lt; Via: 1.1 vegur
-1 &lt; X-Powered-By: Express
-1 &lt; cf-request-id: 027867a8b60000e64087835200000001
-{"data":{"id":4,"email":"eve.holt@reqres.in","first_name":"Eve","last_name":"Holt","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/marcoramires/128.jpg"},"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}</div>
-<div class="step-row">
-<div class="step-cell passed">Then status 200</div>
-<div class="time-cell passed">0.000029</div>
-</div>
-<div class="step-row">
-<div class="step-cell passed">* def data = response.data</div>
-<div class="time-cell passed">0.001696</div>
-</div>
-<div class="step-row">
-<div class="step-cell passed">* print 'id : ',data.id</div>
-<div class="time-cell passed">0.002272</div>
-</div>
-<div class="preformatted">19:13:12.958 [print] id :  4</div>
-<div class="step-row">
-<div class="step-cell passed">* print 'email id :',data.email</div>
-<div class="time-cell passed">0.002116</div>
-</div>
-<div class="preformatted">19:13:12.961 [print] email id : eve.holt@reqres.in</div>
-</div>
-<div class="scenario">
-<div class="scenario-heading">
-<span class="scenario-keyword">Scenario Outline: [2.5:35]</span><span class="scenario-name">get user with id 5</span>
-</div>
-<div class="step-row">
-<div class="step-cell passed">* url 'https://reqres.in/api'</div>
-<div class="time-cell passed">0.000493</div>
-</div>
-<div class="preformatted">19:13:12.980 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
-<div class="step-row">
-<div class="step-cell passed">* header content-type = 'aplication/json'</div>
-<div class="time-cell passed">0.000376</div>
-</div>
-<div class="step-row">
-<div class="step-cell passed">Given path 'users',5</div>
-<div class="time-cell passed">0.007444</div>
-</div>
-<div class="step-row">
-<div class="step-cell passed">When method get</div>
-<div class="time-cell passed">0.465867</div>
-</div>
-<div class="preformatted">19:13:12.993 request:
-1 &gt; GET https://reqres.in/api/users/5
-1 &gt; Accept-Encoding: gzip,deflate
-1 &gt; Connection: Keep-Alive
-1 &gt; Host: reqres.in
-1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_91)
-1 &gt; content-type: aplication/json
-
-19:13:13.454 response time in milliseconds: 459.50
-1 &lt; 200
-1 &lt; Access-Control-Allow-Origin: *
-1 &lt; Age: 137
-1 &lt; CF-Cache-Status: HIT
-1 &lt; CF-RAY: 58d40ef11a59074e-LHR
-1 &lt; Cache-Control: max-age=14400
-1 &lt; Connection: keep-alive
-1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Sat, 02 May 2020 19:13:14 GMT
-1 &lt; Etag: W/"177-mjjNxL3lmkUHZZzV/LAL61Zkg1Y"
-1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 &lt; Server: cloudflare
-1 &lt; Set-Cookie: __cfduid=d551fa985f71d3c9040b6a3c64179e15d1588446794; expires=Mon, 01-Jun-20 19:13:14 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Vary: Accept-Encoding
-1 &lt; Via: 1.1 vegur
-1 &lt; X-Powered-By: Express
-1 &lt; cf-request-id: 027867aab00000074e9eaed200000001
-{"data":{"id":5,"email":"charles.morris@reqres.in","first_name":"Charles","last_name":"Morris","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/stephenmoon/128.jpg"},"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}</div>
-<div class="step-row">
-<div class="step-cell passed">Then status 200</div>
-<div class="time-cell passed">0.000029</div>
-</div>
-<div class="step-row">
-<div class="step-cell passed">* def data = response.data</div>
-<div class="time-cell passed">0.001994</div>
-</div>
-<div class="step-row">
-<div class="step-cell passed">* print 'id : ',data.id</div>
-<div class="time-cell passed">0.002195</div>
-</div>
-<div class="preformatted">19:13:13.460 [print] id :  5</div>
-<div class="step-row">
-<div class="step-cell passed">* print 'email id :',data.email</div>
-<div class="time-cell passed">0.002349</div>
-</div>
-<div class="preformatted">19:13:13.463 [print] email id : charles.morris@reqres.in</div>
-</div>
-<div class="scenario">
-<div class="scenario-heading">
-<span class="scenario-keyword">Scenario Outline: [2.6:36]</span><span class="scenario-name">get user with id 6</span>
-</div>
-<div class="step-row">
-<div class="step-cell passed">* url 'https://reqres.in/api'</div>
-<div class="time-cell passed">0.000536</div>
-</div>
-<div class="preformatted">19:13:13.481 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
-<div class="step-row">
-<div class="step-cell passed">* header content-type = 'aplication/json'</div>
-<div class="time-cell passed">0.000469</div>
-</div>
-<div class="step-row">
-<div class="step-cell passed">Given path 'users',6</div>
-<div class="time-cell passed">0.006764</div>
-</div>
-<div class="step-row">
-<div class="step-cell passed">When method get</div>
-<div class="time-cell passed">0.438881</div>
-</div>
-<div class="preformatted">19:13:13.494 request:
-1 &gt; GET https://reqres.in/api/users/6
-1 &gt; Accept-Encoding: gzip,deflate
-1 &gt; Connection: Keep-Alive
-1 &gt; Host: reqres.in
-1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_91)
-1 &gt; content-type: aplication/json
-
-19:13:13.928 response time in milliseconds: 432.09
-1 &lt; 200
-1 &lt; Access-Control-Allow-Origin: *
-1 &lt; Age: 137
-1 &lt; CF-Cache-Status: HIT
-1 &lt; CF-RAY: 58d40ef41af4e62c-LHR
-1 &lt; Cache-Control: max-age=14400
-1 &lt; Connection: keep-alive
-1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Sat, 02 May 2020 19:13:14 GMT
-1 &lt; Etag: W/"171-RK8GOdO6tEbyyylSdadC1Y6UTGc"
-1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 &lt; Server: cloudflare
-1 &lt; Set-Cookie: __cfduid=da35b82861a67f76eef1a3e086dc6a2e21588446794; expires=Mon, 01-Jun-20 19:13:14 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Vary: Accept-Encoding
-1 &lt; Via: 1.1 vegur
-1 &lt; X-Powered-By: Express
-1 &lt; cf-request-id: 027867ac8b0000e62cadac0200000001
-{"data":{"id":6,"email":"tracey.ramos@reqres.in","first_name":"Tracey","last_name":"Ramos","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/bigmancho/128.jpg"},"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}</div>
-<div class="step-row">
-<div class="step-cell passed">Then status 200</div>
-<div class="time-cell passed">0.000031</div>
-</div>
-<div class="step-row">
-<div class="step-cell passed">* def data = response.data</div>
-<div class="time-cell passed">0.001806</div>
-</div>
-<div class="step-row">
-<div class="step-cell passed">* print 'id : ',data.id</div>
-<div class="time-cell passed">0.003473</div>
-</div>
-<div class="preformatted">19:13:13.935 [print] id :  6</div>
-<div class="step-row">
-<div class="step-cell passed">* print 'email id :',data.email</div>
-<div class="time-cell passed">0.003719</div>
-</div>
-<div class="preformatted">19:13:13.939 [print] email id : tracey.ramos@reqres.in</div>
-</div>
-<div class="scenario">
-<div class="scenario-heading">
-<span class="scenario-keyword">Scenario Outline: [2.7:37]</span><span class="scenario-name">get user with id 7</span>
-</div>
-<div class="step-row">
-<div class="step-cell passed">* url 'https://reqres.in/api'</div>
-<div class="time-cell passed">0.001432</div>
-</div>
-<div class="preformatted">19:13:13.964 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
-<div class="step-row">
-<div class="step-cell passed">* header content-type = 'aplication/json'</div>
-<div class="time-cell passed">0.000598</div>
-</div>
-<div class="step-row">
-<div class="step-cell passed">Given path 'users',7</div>
-<div class="time-cell passed">0.007149</div>
-</div>
-<div class="step-row">
-<div class="step-cell passed">When method get</div>
-<div class="time-cell passed">0.433461</div>
-</div>
-<div class="preformatted">19:13:13.978 request:
-1 &gt; GET https://reqres.in/api/users/7
-1 &gt; Accept-Encoding: gzip,deflate
-1 &gt; Connection: Keep-Alive
-1 &gt; Host: reqres.in
-1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_91)
-1 &gt; content-type: aplication/json
-
-19:13:14.407 response time in milliseconds: 425.87
-1 &lt; 200
-1 &lt; Access-Control-Allow-Origin: *
-1 &lt; Age: 137
-1 &lt; CF-Cache-Status: HIT
-1 &lt; CF-RAY: 58d40ef7092f073a-LHR
-1 &lt; Cache-Control: max-age=14400
-1 &lt; Connection: keep-alive
-1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Sat, 02 May 2020 19:13:15 GMT
-1 &lt; Etag: W/"177-fGSlW9wHa6mgvsf6tGsV8zWQl+w"
-1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 &lt; Server: cloudflare
-1 &lt; Set-Cookie: __cfduid=dfdd85a9c05cf66df9ce5b05384da41b81588446795; expires=Mon, 01-Jun-20 19:13:15 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Vary: Accept-Encoding
-1 &lt; Via: 1.1 vegur
-1 &lt; X-Powered-By: Express
-1 &lt; cf-request-id: 027867ae670000073a3ab38200000001
-{"data":{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/follettkyle/128.jpg"},"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}</div>
-<div class="step-row">
-<div class="step-cell passed">Then status 200</div>
-<div class="time-cell passed">0.00003</div>
-</div>
-<div class="step-row">
-<div class="step-cell passed">* def data = response.data</div>
-<div class="time-cell passed">0.008055</div>
-</div>
-<div class="step-row">
-<div class="step-cell passed">* print 'id : ',data.id</div>
-<div class="time-cell passed">0.00461</div>
-</div>
-<div class="preformatted">19:13:14.421 [print] id :  7</div>
-<div class="step-row">
-<div class="step-cell passed">* print 'email id :',data.email</div>
-<div class="time-cell passed">0.012478</div>
-</div>
-<div class="preformatted">19:13:14.434 [print] email id : michael.lawson@reqres.in</div>
-</div>
-<div class="scenario">
-<div class="scenario-heading">
-<span class="scenario-keyword">Scenario Outline: [2.8:38]</span><span class="scenario-name">get user with id 8</span>
-</div>
-<div class="step-row">
-<div class="step-cell passed">* url 'https://reqres.in/api'</div>
-<div class="time-cell passed">0.000527</div>
-</div>
-<div class="preformatted">19:13:14.468 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
-<div class="step-row">
-<div class="step-cell passed">* header content-type = 'aplication/json'</div>
-<div class="time-cell passed">0.000416</div>
-</div>
-<div class="step-row">
-<div class="step-cell passed">Given path 'users',8</div>
-<div class="time-cell passed">0.013963</div>
-</div>
-<div class="step-row">
-<div class="step-cell passed">When method get</div>
-<div class="time-cell passed">0.593949</div>
-</div>
-<div class="preformatted">19:13:14.490 request:
-1 &gt; GET https://reqres.in/api/users/8
-1 &gt; Accept-Encoding: gzip,deflate
-1 &gt; Connection: Keep-Alive
-1 &gt; Host: reqres.in
-1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_91)
-1 &gt; content-type: aplication/json
-
-19:13:15.078 response time in milliseconds: 584.43
-1 &lt; 200
-1 &lt; Access-Control-Allow-Origin: *
-1 &lt; Age: 137
-1 &lt; CF-Cache-Status: HIT
-1 &lt; CF-RAY: 58d40efb38aa0796-LHR
-1 &lt; Cache-Control: max-age=14400
-1 &lt; Connection: keep-alive
-1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Sat, 02 May 2020 19:13:16 GMT
-1 &lt; Etag: W/"178-tTqXTTc/NnA03LicI+yUfgPh+bQ"
-1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 &lt; Server: cloudflare
-1 &lt; Set-Cookie: __cfduid=ddf08a4152c19c247de45958f4d32b3c51588446796; expires=Mon, 01-Jun-20 19:13:16 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Vary: Accept-Encoding
-1 &lt; Via: 1.1 vegur
-1 &lt; X-Powered-By: Express
-1 &lt; cf-request-id: 027867b1070000079658207200000001
-{"data":{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/araa3185/128.jpg"},"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}</div>
-<div class="step-row">
-<div class="step-cell passed">Then status 200</div>
-<div class="time-cell passed">0.000039</div>
-</div>
-<div class="step-row">
-<div class="step-cell passed">* def data = response.data</div>
-<div class="time-cell passed">0.002112</div>
-</div>
-<div class="step-row">
-<div class="step-cell passed">* print 'id : ',data.id</div>
-<div class="time-cell passed">0.008501</div>
-</div>
-<div class="preformatted">19:13:15.092 [print] id :  8</div>
-<div class="step-row">
-<div class="step-cell passed">* print 'email id :',data.email</div>
-<div class="time-cell passed">0.002797</div>
-</div>
-<div class="preformatted">19:13:15.095 [print] email id : lindsay.ferguson@reqres.in</div>
-</div>
-<div class="scenario">
-<div class="scenario-heading">
-<span class="scenario-keyword">Scenario Outline: [2.9:39]</span><span class="scenario-name">get user with id 9</span>
-</div>
-<div class="step-row">
-<div class="step-cell passed">* url 'https://reqres.in/api'</div>
-<div class="time-cell passed">0.000531</div>
-</div>
-<div class="preformatted">19:13:15.120 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
-<div class="step-row">
-<div class="step-cell passed">* header content-type = 'aplication/json'</div>
-<div class="time-cell passed">0.000475</div>
-</div>
-<div class="step-row">
-<div class="step-cell passed">Given path 'users',9</div>
-<div class="time-cell passed">0.009203</div>
-</div>
-<div class="step-row">
-<div class="step-cell passed">When method get</div>
-<div class="time-cell passed">0.422653</div>
-</div>
-<div class="preformatted">19:13:15.137 request:
-1 &gt; GET https://reqres.in/api/users/9
-1 &gt; Accept-Encoding: gzip,deflate
-1 &gt; Connection: Keep-Alive
-1 &gt; Host: reqres.in
-1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_91)
-1 &gt; content-type: aplication/json
-
-19:13:15.553 response time in milliseconds: 413.85
-1 &lt; 200
-1 &lt; Access-Control-Allow-Origin: *
-1 &lt; Age: 136
-1 &lt; CF-Cache-Status: HIT
-1 &lt; CF-RAY: 58d40efe3d7be668-LHR
-1 &lt; Cache-Control: max-age=14400
-1 &lt; Connection: keep-alive
-1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Sat, 02 May 2020 19:13:16 GMT
-1 &lt; Etag: W/"171-W8NW/a10i/az6UFM+JoiwKbYP+E"
-1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 &lt; Server: cloudflare
-1 &lt; Set-Cookie: __cfduid=d4f82edfe45b90a0775727edb9f9c49c61588446796; expires=Mon, 01-Jun-20 19:13:16 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Vary: Accept-Encoding
-1 &lt; Via: 1.1 vegur
-1 &lt; X-Powered-By: Express
-1 &lt; cf-request-id: 027867b2e10000e668b58e2200000001
-{"data":{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/vivekprvr/128.jpg"},"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}</div>
-<div class="step-row">
-<div class="step-cell passed">Then status 200</div>
-<div class="time-cell passed">0.000029</div>
-</div>
-<div class="step-row">
-<div class="step-cell passed">* def data = response.data</div>
-<div class="time-cell passed">0.001685</div>
-</div>
-<div class="step-row">
-<div class="step-cell passed">* print 'id : ',data.id</div>
-<div class="time-cell passed">0.002781</div>
-</div>
-<div class="preformatted">19:13:15.568 [print] id :  9</div>
-<div class="step-row">
-<div class="step-cell passed">* print 'email id :',data.email</div>
-<div class="time-cell passed">0.002442</div>
-</div>
-<div class="preformatted">19:13:15.571 [print] email id : tobias.funke@reqres.in</div>
 </div>
 </div>
 </body>

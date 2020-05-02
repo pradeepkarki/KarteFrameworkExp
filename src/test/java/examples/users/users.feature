@@ -3,6 +3,7 @@ Feature: sample karate test script
 
   Background: 
     * url 'https://reqres.in/api'
+    * header content-type = 'aplication/json'
     
 
   Scenario: get user of with total number of 2 pages
@@ -15,13 +16,30 @@ Feature: sample karate test script
    
    
     
-   Scenario: get user with id 23
-   Given path 'users',23
+   Scenario Outline: get user with id <id>
+   Given path 'users',<id>
    When method get
    Then status 200
    * def data = response.data
    * print 'id : ',data.id
    * print 'email id :',data.email
+   
+   
+   
+   Examples:
+   |id|
+   |1|
+   |2|
+   |3|
+   |4|
+   |5|
+   |6|
+   |7|
+   |8|
+   |9|
+   
+   
+   
    
    
    
