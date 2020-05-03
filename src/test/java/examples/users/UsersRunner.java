@@ -1,20 +1,23 @@
 package examples.users;
 
-import org.junit.BeforeClass;
-
 import com.intuit.karate.junit5.Karate;
 
 class UsersRunner {
 
-	@BeforeClass
-	public static void before() {
-		System.setProperty("karate.env", "pre-prod");
-	}
+	/*
+	 * @Karate.Test Karate testSample() { return
+	 * Karate.run("sample").relativeTo(getClass()); }
+	 * 
+	 * @Karate.Test Karate testTags() { return
+	 * Karate.run("tags").tags("@second").relativeTo(getClass()); }
+	 * 
+	 * @Karate.Test Karate testFullPath() { return
+	 * Karate.run("classpath:karate/tags.feature").tags("@first"); }
+	 */
 
 	@Karate.Test
-	Karate testUsers() {
-
-		return Karate.run("users").relativeTo(getClass());
+	Karate testSample() {
+		return Karate.run("classpath:examples/users").relativeTo(getClass());
 	}
 
 }

@@ -1,0 +1,59 @@
+00:12:44.645 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+00:12:45.624 request:
+1 > GET https://reqres.in/api/users/1
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_91)
+1 > content-type: aplication/json
+
+00:12:47.351 response time in milliseconds: 1713.44
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 1591
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 58dc1fc4cb9ae5fc-LHR
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 03 May 2020 18:42:49 GMT
+1 < Etag: W/"172-2ZZzAny/UrOMYxwGqcj81wSK1S4"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d5219c18e00a58a64de0aca89042142711588531369; expires=Tue, 02-Jun-20 18:42:49 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 027d722ef80000e5fc92b43200000001
+{"data":{"id":1,"email":"george.bluth@reqres.in","first_name":"George","last_name":"Bluth","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/calebogden/128.jpg"},"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}
+
+00:12:47.856 [print] id :  1
+00:12:47.900 [print] email id : george.bluth@reqres.in
+
+e_value":"17-1456"},{"id":6,"name":"blue turquoise","year":2005,"color":"#53B0AE","pantone_value":"15-5217"}],"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}
+
+
+pe: aplication/json
+
+23:21:22.881 response time in milliseconds: 633.62
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 5315
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 58dbd4766f470722-LHR
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Sun, 03 May 2020 17:51:25 GMT
+1 < Etag: W/"301-ijGNEim/mAI7LpbQIXyQc2bjt+k"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=d822f39ecbf7a245ed56e2c21d56d80ca1588528285; expires=Tue, 02-Jun-20 17:51:25 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 027d431dfd00000722a285c200000001
+{"page":1,"per_page":6,"total":12,"total_pages":2,"data":[{"id":1,"name":"cerulean","year":2000,"color":"#98B2D1","pantone_value":"15-4020"},{"id":2,"name":"fuchsia rose","year":2001,"color":"#C74375","pantone_value":"17-2031"},{"id":3,"name":"true red","year":2002,"color":"#BF1932","pantone_value":"19-1664"},{"id":4,"name":"aqua sky","year":2003,"color":"#7BC4C4","pantone_value":"14-4811"},{"id":5,"name":"tigerlily","year":2004,"color":"#E2583E","pantone_value":"17-1456"},{"id":6,"name":"blue turquoise","year":2005,"color":"#53B0AE","pantone_value":"15-5217"}],"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}
+

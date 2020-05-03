@@ -1,0 +1,87 @@
+<testsuite failures="0" name="examples/users/users.feature" skipped="0" tests="4" time="10.39468">
+  <testcase classname="examples.users.users" name="get user of with total number of 2 pages" time="3.282729">
+    <system-out>* url 'https://reqres.in/api' ............................................. passed
+* header content-type = 'aplication/json' ................................. passed
+Given path 'users' ........................................................ passed
+And param page = 2 ........................................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def data = response.data ................................................ passed
+* print 'data - &gt;',data ................................................... passed</system-out>
+  </testcase>
+  <testcase classname="examples.users.users" name="get user with id 1" time="3.222189">
+    <system-out>* url 'https://reqres.in/api' ............................................. passed
+* header content-type = 'aplication/json' ................................. passed
+Given path 'users' ........................................................ passed
+And param page = 2 ........................................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def data = response.data ................................................ passed
+* print 'data - &gt;',data ................................................... passed
+* url 'https://reqres.in/api' ............................................. passed
+* header content-type = 'aplication/json' ................................. passed
+Given path 'users',1 ...................................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def data = response.data ................................................ passed
+* print 'id : ',data.id ................................................... passed
+* print 'email id :',data.email ........................................... passed</system-out>
+  </testcase>
+  <testcase classname="examples.users.users" name="get user with id 2" time="3.248665">
+    <system-out>* url 'https://reqres.in/api' ............................................. passed
+* header content-type = 'aplication/json' ................................. passed
+Given path 'users' ........................................................ passed
+And param page = 2 ........................................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def data = response.data ................................................ passed
+* print 'data - &gt;',data ................................................... passed
+* url 'https://reqres.in/api' ............................................. passed
+* header content-type = 'aplication/json' ................................. passed
+Given path 'users',1 ...................................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def data = response.data ................................................ passed
+* print 'id : ',data.id ................................................... passed
+* print 'email id :',data.email ........................................... passed
+* url 'https://reqres.in/api' ............................................. passed
+* header content-type = 'aplication/json' ................................. passed
+Given path 'users',2 ...................................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def data = response.data ................................................ passed
+* print 'id : ',data.id ................................................... passed
+* print 'email id :',data.email ........................................... passed</system-out>
+  </testcase>
+  <testcase classname="examples.users.users" name="get list of users" time="0.641097">
+    <system-out>* url 'https://reqres.in/api' ............................................. passed
+* header content-type = 'aplication/json' ................................. passed
+Given path 'users' ........................................................ passed
+And param page = 2 ........................................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def data = response.data ................................................ passed
+* print 'data - &gt;',data ................................................... passed
+* url 'https://reqres.in/api' ............................................. passed
+* header content-type = 'aplication/json' ................................. passed
+Given path 'users',1 ...................................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def data = response.data ................................................ passed
+* print 'id : ',data.id ................................................... passed
+* print 'email id :',data.email ........................................... passed
+* url 'https://reqres.in/api' ............................................. passed
+* header content-type = 'aplication/json' ................................. passed
+Given path 'users',2 ...................................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* def data = response.data ................................................ passed
+* print 'id : ',data.id ................................................... passed
+* print 'email id :',data.email ........................................... passed
+* url 'https://reqres.in/api' ............................................. passed
+* header content-type = 'aplication/json' ................................. passed
+Given path 'unknown' ...................................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+</testsuite>

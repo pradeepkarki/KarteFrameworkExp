@@ -45,7 +45,7 @@
   .embed img { width: 100%; }
 </style>
 
-<title>examples.graphql.graphql</title>
+<title>examples.users.calluserdetails</title>
 <script>window.onload = function() {
   var possibleModes = ['failed', 'skipped', 'passed'];
   var tests = {};
@@ -168,205 +168,252 @@
 </img><div>
 <div class="scenario">
 <div class="scenario-heading">
-<span class="scenario-keyword">Scenario: [1:8]</span><span class="scenario-name">simple graphql request</span>
+<span class="scenario-keyword">Scenario: [1:10]</span><span class="scenario-name">get list of users</span>
 </div>
 <div class="step-row">
-<div class="step-cell passed">* url 'http://graphql-pokemon.now.sh'</div>
-<div class="time-cell passed">0.008291</div>
+<div class="step-cell passed">* url 'https://reqres.in/api'</div>
+<div class="time-cell passed">0.008003</div>
 </div>
-<div class="preformatted">15:09:23.736 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="preformatted">00:10:20.969 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
 <div class="step-row">
-<div class="step-cell passed">Given text query =</div>
-<div class="time-cell passed">0.002378</div>
-</div>
-<div class="preformatted">{
-  pokemon(name: "Pikachu") {
-    id
-    number
-    name
-    attacks {
-      special {
-        name
-        type
-        damage
-      }
-    }
-  }
-}</div>
-<div class="step-row">
-<div class="step-cell passed">And request { query: '#(query)' }</div>
-<div class="time-cell passed">0.155375</div>
+<div class="step-cell passed">* header content-type = 'aplication/json'</div>
+<div class="time-cell passed">0.006458</div>
 </div>
 <div class="step-row">
-<div class="step-cell passed">When method post</div>
-<div class="time-cell passed">0.691851</div>
+<div class="step-cell passed">* def resp = call read('userdetails.feature')</div>
+<div class="time-cell passed">2.007788</div>
 </div>
-<div class="preformatted">15:09:24.556 request:
-1 &gt; POST http://graphql-pokemon.now.sh
+<div class="step-row">
+<div class="step-cell passed">examples/users/userdetails.feature</div>
+<div class="time-cell passed">1.968905</div>
+</div>
+<div class="scenario-steps-nested">
+<div class="step-row">
+<div class="step-cell passed">* url 'https://reqres.in/api'</div>
+<div class="time-cell passed">0.004701</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">* header content-type = 'aplication/json'</div>
+<div class="time-cell passed">0.000247</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">Given path 'users'</div>
+<div class="time-cell passed">0.002874</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">And param page = 2</div>
+<div class="time-cell passed">0.006561</div>
+</div>
+<div class="step-row">
+<div class="step-cell passed">When method get</div>
+<div class="time-cell passed">1.954457</div>
+</div>
+<div class="preformatted">00:10:21.841 request:
+1 &gt; GET https://reqres.in/api/users?page=2
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
-1 &gt; Content-Length: 175
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Host: graphql-pokemon.now.sh
+1 &gt; Host: reqres.in
 1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_91)
-{"query":"{\n  pokemon(name: \"Pikachu\") {\n    id\n    number\n    name\n    attacks {\n      special {\n        name\n        type\n        damage\n      }\n    }\n  }\n}"}
+1 &gt; content-type: aplication/json
 
-15:09:24.612 response time in milliseconds: 53.87
-1 &lt; 308
+00:10:22.860 response time in milliseconds: 1009.54
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Age: 2414
+1 &lt; CF-Cache-Status: HIT
+1 &lt; CF-RAY: 58dc1c3d7ecedc43-LHR
+1 &lt; Cache-Control: max-age=14400
 1 &lt; Connection: keep-alive
-1 &lt; Content-Type: text/plain
-1 &lt; Date: Sat, 02 May 2020 15:09:25 GMT
-1 &lt; Location: https://graphql-pokemon.now.sh/
-1 &lt; Refresh: 0;url=https://graphql-pokemon.now.sh/
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 03 May 2020 18:40:25 GMT
+1 &lt; Etag: W/"4dd-IPv5LdOOb6s5S9E3i59wBCJ1k/0"
+1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 &lt; Server: cloudflare
+1 &lt; Set-Cookie: __cfduid=dcfe41547d184cd4655402944c8deca841588531225; expires=Tue, 02-Jun-20 18:40:25 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
 1 &lt; Transfer-Encoding: chunked
-1 &lt; server: now
-1 &lt; x-now-id: bom1::ddtg5-1588432165707-d7c2365bf6c3
-1 &lt; x-now-trace: bom1
-1 &lt; x-vercel-id: bom1::ddtg5-1588432165707-d7c2365bf6c3
-Redirecting to https://graphql-pokemon.now.sh/ (308)</div>
+1 &lt; Vary: Accept-Encoding
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+1 &lt; cf-request-id: 027d6ffa680000dc43fb18d200000001
+{"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/follettkyle/128.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/araa3185/128.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/vivekprvr/128.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/russoedu/128.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/hebertialmeida/128.jpg"}],"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}</div>
 <div class="step-row">
-<div class="step-cell failed">Then status 200</div>
-<div class="time-cell failed">0.000573</div>
+<div class="step-cell passed">Then status 200</div>
+<div class="time-cell passed">0.000064</div>
 </div>
-<div class="preformatted">15:09:24.615 status code was: 308, expected: 200, response time: 54, url: http://graphql-pokemon.now.sh, response: Redirecting to https://graphql-pokemon.now.sh/ (308)
-graphql.feature:29 - status code was: 308, expected: 200, response time: 54, url: http://graphql-pokemon.now.sh, response: Redirecting to https://graphql-pokemon.now.sh/ (308)
 </div>
 <div class="step-row">
-<div class="step-cell skipped">* print 'response:', response</div>
-<div class="time-cell skipped">0</div>
+<div class="step-cell passed">* def respExpected = resp.response</div>
+<div class="time-cell passed">0.081392</div>
 </div>
 <div class="step-row">
-<div class="step-cell skipped">* match $.data.pokemon.number == '025'</div>
-<div class="time-cell skipped">0</div>
+<div class="step-cell passed">* print '*****************',respExpected</div>
+<div class="time-cell passed">0.027355</div>
 </div>
-<div class="step-row">
-<div class="step-cell skipped">* def attacks = get[0] response..special</div>
-<div class="time-cell skipped">0</div>
-</div>
-<div class="step-row">
-<div class="step-cell skipped">* match attacks contains { name: 'Thunderbolt', type: 'Electric', damage: 55 }</div>
-<div class="time-cell skipped">0</div>
-</div>
-</div>
-<div class="scenario">
-<div class="scenario-heading">
-<span class="scenario-keyword">Scenario: [1:8]</span><span class="scenario-name">simple graphql request</span>
-</div>
-<div class="step-row">
-<div class="step-cell passed">* url 'http://graphql-pokemon.now.sh'</div>
-<div class="time-cell passed">0.008291</div>
-</div>
-<div class="preformatted">15:09:23.736 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
-<div class="step-row">
-<div class="step-cell passed">Given text query =</div>
-<div class="time-cell passed">0.002378</div>
-</div>
-<div class="preformatted">{
-  pokemon(name: "Pikachu") {
-    id
-    number
-    name
-    attacks {
-      special {
-        name
-        type
-        damage
-      }
+<div class="preformatted">00:10:23.130 [print] ***************** {
+  "per_page": 6,
+  "total": 12,
+  "ad": {
+    "company": "StatusCode Weekly",
+    "text": "A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things.",
+    "url": "http://statuscode.org/"
+  },
+  "data": [
+    {
+      "last_name": "Lawson",
+      "id": 7,
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/follettkyle/128.jpg",
+      "first_name": "Michael",
+      "email": "michael.lawson@reqres.in"
+    },
+    {
+      "last_name": "Ferguson",
+      "id": 8,
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/araa3185/128.jpg",
+      "first_name": "Lindsay",
+      "email": "lindsay.ferguson@reqres.in"
+    },
+    {
+      "last_name": "Funke",
+      "id": 9,
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/vivekprvr/128.jpg",
+      "first_name": "Tobias",
+      "email": "tobias.funke@reqres.in"
+    },
+    {
+      "last_name": "Fields",
+      "id": 10,
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/russoedu/128.jpg",
+      "first_name": "Byron",
+      "email": "byron.fields@reqres.in"
+    },
+    {
+      "last_name": "Edwards",
+      "id": 11,
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg",
+      "first_name": "George",
+      "email": "george.edwards@reqres.in"
+    },
+    {
+      "last_name": "Howell",
+      "id": 12,
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/hebertialmeida/128.jpg",
+      "first_name": "Rachel",
+      "email": "rachel.howell@reqres.in"
     }
-  }
+  ],
+  "page": 2,
+  "total_pages": 2
 }</div>
 <div class="step-row">
-<div class="step-cell passed">And request { query: '#(query)' }</div>
-<div class="time-cell passed">0.155375</div>
+<div class="step-cell passed">Given path 'users'</div>
+<div class="time-cell passed">0.001841</div>
 </div>
 <div class="step-row">
-<div class="step-cell passed">When method post</div>
-<div class="time-cell passed">0.691851</div>
+<div class="step-cell passed">And param page = 2</div>
+<div class="time-cell passed">0.000585</div>
 </div>
-<div class="preformatted">15:09:24.556 request:
-1 &gt; POST http://graphql-pokemon.now.sh
+<div class="step-row">
+<div class="step-cell passed">When method get</div>
+<div class="time-cell passed">0.542533</div>
+</div>
+<div class="preformatted">00:10:23.158 request:
+1 &gt; GET https://reqres.in/api/users?page=2
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
-1 &gt; Content-Length: 175
-1 &gt; Content-Type: application/json; charset=UTF-8
-1 &gt; Host: graphql-pokemon.now.sh
+1 &gt; Host: reqres.in
 1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_91)
-{"query":"{\n  pokemon(name: \"Pikachu\") {\n    id\n    number\n    name\n    attacks {\n      special {\n        name\n        type\n        damage\n      }\n    }\n  }\n}"}
+1 &gt; content-type: aplication/json
 
-15:09:24.612 response time in milliseconds: 53.87
-1 &lt; 308
+00:10:23.686 response time in milliseconds: 525.53
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Age: 2415
+1 &lt; CF-Cache-Status: HIT
+1 &lt; CF-RAY: 58dc1c42def2ce4b-LHR
+1 &lt; Cache-Control: max-age=14400
 1 &lt; Connection: keep-alive
-1 &lt; Content-Type: text/plain
-1 &lt; Date: Sat, 02 May 2020 15:09:25 GMT
-1 &lt; Location: https://graphql-pokemon.now.sh/
-1 &lt; Refresh: 0;url=https://graphql-pokemon.now.sh/
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Sun, 03 May 2020 18:40:26 GMT
+1 &lt; Etag: W/"4dd-IPv5LdOOb6s5S9E3i59wBCJ1k/0"
+1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 &lt; Server: cloudflare
+1 &lt; Set-Cookie: __cfduid=d2277d16bf4fd4121614c9ad5f9ed5db71588531226; expires=Tue, 02-Jun-20 18:40:26 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
 1 &lt; Transfer-Encoding: chunked
-1 &lt; server: now
-1 &lt; x-now-id: bom1::ddtg5-1588432165707-d7c2365bf6c3
-1 &lt; x-now-trace: bom1
-1 &lt; x-vercel-id: bom1::ddtg5-1588432165707-d7c2365bf6c3
-Redirecting to https://graphql-pokemon.now.sh/ (308)</div>
+1 &lt; Vary: Accept-Encoding
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Powered-By: Express
+1 &lt; cf-request-id: 027d6ffdc50000ce4bc93f9200000001
+{"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/follettkyle/128.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/araa3185/128.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/vivekprvr/128.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/russoedu/128.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/hebertialmeida/128.jpg"}],"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}</div>
 <div class="step-row">
-<div class="step-cell failed">Then status 200</div>
-<div class="time-cell failed">0.000573</div>
-</div>
-<div class="preformatted">15:09:24.615 status code was: 308, expected: 200, response time: 54, url: http://graphql-pokemon.now.sh, response: Redirecting to https://graphql-pokemon.now.sh/ (308)
-graphql.feature:29 - status code was: 308, expected: 200, response time: 54, url: http://graphql-pokemon.now.sh, response: Redirecting to https://graphql-pokemon.now.sh/ (308)
+<div class="step-cell passed">Then status 200</div>
+<div class="time-cell passed">0.00003</div>
 </div>
 <div class="step-row">
-<div class="step-cell skipped">* print 'response:', response</div>
-<div class="time-cell skipped">0</div>
+<div class="step-cell passed">* def genertedResponse = response</div>
+<div class="time-cell passed">0.000087</div>
 </div>
 <div class="step-row">
-<div class="step-cell skipped">* match $.data.pokemon.number == '025'</div>
-<div class="time-cell skipped">0</div>
+<div class="step-cell passed">* print '@@@@@@@@',genertedResponse</div>
+<div class="time-cell passed">0.009113</div>
 </div>
+<div class="preformatted">00:10:23.697 [print] @@@@@@@@ {
+  "per_page": 6,
+  "total": 12,
+  "ad": {
+    "company": "StatusCode Weekly",
+    "text": "A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things.",
+    "url": "http://statuscode.org/"
+  },
+  "data": [
+    {
+      "last_name": "Lawson",
+      "id": 7,
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/follettkyle/128.jpg",
+      "first_name": "Michael",
+      "email": "michael.lawson@reqres.in"
+    },
+    {
+      "last_name": "Ferguson",
+      "id": 8,
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/araa3185/128.jpg",
+      "first_name": "Lindsay",
+      "email": "lindsay.ferguson@reqres.in"
+    },
+    {
+      "last_name": "Funke",
+      "id": 9,
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/vivekprvr/128.jpg",
+      "first_name": "Tobias",
+      "email": "tobias.funke@reqres.in"
+    },
+    {
+      "last_name": "Fields",
+      "id": 10,
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/russoedu/128.jpg",
+      "first_name": "Byron",
+      "email": "byron.fields@reqres.in"
+    },
+    {
+      "last_name": "Edwards",
+      "id": 11,
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg",
+      "first_name": "George",
+      "email": "george.edwards@reqres.in"
+    },
+    {
+      "last_name": "Howell",
+      "id": 12,
+      "avatar": "https://s3.amazonaws.com/uifaces/faces/twitter/hebertialmeida/128.jpg",
+      "first_name": "Rachel",
+      "email": "rachel.howell@reqres.in"
+    }
+  ],
+  "page": 2,
+  "total_pages": 2
+}</div>
 <div class="step-row">
-<div class="step-cell skipped">* def attacks = get[0] response..special</div>
-<div class="time-cell skipped">0</div>
-</div>
-<div class="step-row">
-<div class="step-cell skipped">* match attacks contains { name: 'Thunderbolt', type: 'Electric', damage: 55 }</div>
-<div class="time-cell skipped">0</div>
-</div>
-</div>
-<div class="scenario">
-<div class="scenario-heading">
-<span class="scenario-keyword">Scenario: [2:43]</span><span class="scenario-name">graphql from a file and variables</span>
-</div>
-<div class="step-row">
-<div class="step-cell passed">* url 'http://graphql-pokemon.now.sh'</div>
-<div class="time-cell passed">0.00029</div>
-</div>
-<div class="preformatted">15:09:24.780 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
-<div class="step-row">
-<div class="step-cell failed">Given def query = read('temp .graphql')</div>
-<div class="time-cell failed">0.00725</div>
-</div>
-<div class="preformatted">graphql.feature:46 - could not find or read file: temp .graphql</div>
-<div class="step-row">
-<div class="step-cell skipped">And def variables = { name: 'Charmander' }</div>
-<div class="time-cell skipped">0</div>
-</div>
-<div class="step-row">
-<div class="step-cell skipped">And request { query: '#(query)', variables: '#(variables)' }</div>
-<div class="time-cell skipped">0</div>
-</div>
-<div class="step-row">
-<div class="step-cell skipped">When method post</div>
-<div class="time-cell skipped">0</div>
-</div>
-<div class="step-row">
-<div class="step-cell skipped">Then status 200</div>
-<div class="time-cell skipped">0</div>
-</div>
-<div class="step-row">
-<div class="step-cell skipped">* def expected = [{ name: 'Flamethrower', type: 'Fire', damage: 55 }, { name: 'Flame Charge', type: 'Fire', damage: 25 }]</div>
-<div class="time-cell skipped">0</div>
-</div>
-<div class="step-row">
-<div class="step-cell skipped">* match $.data.pokemon contains { number: '004', name: 'Charmander', attacks: { special: '#(^expected)' } }</div>
-<div class="time-cell skipped">0</div>
+<div class="step-cell passed">* match genertedResponse == respExpected</div>
+<div class="time-cell passed">0.013787</div>
 </div>
 </div>
 </div>

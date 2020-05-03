@@ -1,0 +1,4 @@
+examples\graphql\GraphqlStandaloneRunner.class
+examples\ExamplesTest.class
+examples\users\UsersRunner.class
+examples\TestParallel.class

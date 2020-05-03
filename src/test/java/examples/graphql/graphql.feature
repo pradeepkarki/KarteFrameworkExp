@@ -1,3 +1,4 @@
+@ignore
 Feature: test graphql end point
 
 Background:
@@ -43,7 +44,7 @@ Scenario: simple graphql request
 Scenario: graphql from a file and variables
     # here the query is read from a file
     # note that the 'replace' keyword (not used here) can also be very useful for dynamic query building
-    Given def query = read('temp .graphql')
+    Given def query = read('temp.graphql')
     And def variables = { name: 'Charmander' }
     And request { query: '#(query)', variables: '#(variables)' }
     When method post

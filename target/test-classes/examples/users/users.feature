@@ -25,18 +25,16 @@ Feature: sample karate test script
    * print 'email id :',data.email
    
    
-   
    Examples:
    |id|
    |1|
    |2|
-   |3|
-   |4|
-   |5|
-   |6|
-   |7|
-   |8|
-   |9|
+ 
+   
+   Scenario: get list of users
+   Given path 'unknown'
+   When method get
+   Then status 200
    
    
    
