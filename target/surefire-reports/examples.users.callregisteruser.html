@@ -45,7 +45,7 @@
   .embed img { width: 100%; }
 </style>
 
-<title>examples.users.userdetails</title>
+<title>examples.users.callregisteruser</title>
 <script>window.onload = function() {
   var possibleModes = ['failed', 'skipped', 'passed'];
   var tests = {};
@@ -168,60 +168,54 @@
 </img><div>
 <div class="scenario">
 <div class="scenario-heading">
-<span class="scenario-keyword">Scenario: [1:7]</span><span class="scenario-name">get list of users</span>
+<span class="scenario-keyword">Scenario: [1:22]</span><span class="scenario-name">generate token</span>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* url 'https://reqres.in/api'</div>
-<div class="time-cell passed">0.000615</div>
+<div class="time-cell passed">0.007565</div>
 </div>
-<div class="preformatted">14:12:26.224 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="preformatted">14:12:22.415 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
 <div class="step-row">
-<div class="step-cell passed">* header content-type = 'aplication/json'</div>
-<div class="time-cell passed">0.000459</div>
-</div>
-<div class="step-row">
-<div class="step-cell passed">Given path 'users'</div>
-<div class="time-cell passed">0.00042</div>
+<div class="step-cell passed">* header content-type = 'Application/Json'</div>
+<div class="time-cell passed">0.006361</div>
 </div>
 <div class="step-row">
-<div class="step-cell passed">And param page = 2</div>
-<div class="time-cell passed">0.000444</div>
+<div class="step-cell passed">* table loginDetails</div>
+<div class="time-cell passed">0.080767</div>
+</div>
+<table>
+<tr>
+<td>username</td><td>password</td>
+</tr>
+<tr>
+<td>'eve.holt@reqres.in'</td><td>'pistol'</td>
+</tr>
+<tr>
+<td>'eve.holt1@reqres.in'</td><td>'pistol'</td>
+</tr>
+</table>
+<div class="step-row">
+<div class="step-cell failed">* def payload = read(this:payload.json)</div>
+<div class="time-cell failed">0.006848</div>
+</div>
+<div class="preformatted">-unknown-:13 - javascript evaluation failed: read(this:payload.json), &lt;eval&gt;:1:9 Expected , but found :&#13;
+read(this:payload.json)&#13;
+         ^ in &lt;eval&gt; at line number 1 at column number 9</div>
+<div class="step-row">
+<div class="step-cell skipped">* def responsecall = call read('registeruser.feature') payload</div>
+<div class="time-cell skipped">0</div>
 </div>
 <div class="step-row">
-<div class="step-cell passed">When method get</div>
-<div class="time-cell passed">0.164746</div>
+<div class="step-cell skipped">* def expectedToken = responsecall.response.token</div>
+<div class="time-cell skipped">0</div>
 </div>
-<div class="preformatted">14:12:26.233 request:
-1 &gt; GET https://reqres.in/api/users?page=2
-1 &gt; Accept-Encoding: gzip,deflate
-1 &gt; Connection: Keep-Alive
-1 &gt; Host: reqres.in
-1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_91)
-1 &gt; content-type: aplication/json
-
-14:12:26.391 response time in milliseconds: 156.65
-1 &lt; 200
-1 &lt; Access-Control-Allow-Origin: *
-1 &lt; Age: 1485
-1 &lt; CF-Cache-Status: HIT
-1 &lt; CF-RAY: 58e0edab4f0ee135-BOM
-1 &lt; Cache-Control: max-age=14400
-1 &lt; Connection: keep-alive
-1 &lt; Content-Type: application/json; charset=utf-8
-1 &lt; Date: Mon, 04 May 2020 08:42:26 GMT
-1 &lt; Etag: W/"4dd-IPv5LdOOb6s5S9E3i59wBCJ1k/0"
-1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
-1 &lt; Server: cloudflare
-1 &lt; Set-Cookie: __cfduid=dbfa08105dc6ccd4eb55fc9b02e8236dc1588581746; expires=Wed, 03-Jun-20 08:42:26 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Vary: Accept-Encoding
-1 &lt; Via: 1.1 vegur
-1 &lt; X-Powered-By: Express
-1 &lt; cf-request-id: 028072df110000e13522aba200000001
-{"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/follettkyle/128.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/araa3185/128.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/vivekprvr/128.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/russoedu/128.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/hebertialmeida/128.jpg"}],"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}</div>
 <div class="step-row">
-<div class="step-cell passed">Then status 200</div>
-<div class="time-cell passed">0.000025</div>
+<div class="step-cell skipped">* print 'Id : ',responsecall.response.id</div>
+<div class="time-cell skipped">0</div>
+</div>
+<div class="step-row">
+<div class="step-cell skipped">* print 'Access token : ', expectedToken</div>
+<div class="time-cell skipped">0</div>
 </div>
 </div>
 </div>

@@ -17,7 +17,7 @@ class UsersRunner {
 
 	@Karate.Test
 	Karate testSample() {
-		return Karate.run("classpath:examples/users").relativeTo(getClass());
+		return Karate.run("classpath:examples/users/").relativeTo(getClass());
 	}
 
 }

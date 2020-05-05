@@ -1,0 +1,14 @@
+<testsuite failures="1" name="examples/users/registeruser.feature" skipped="0" tests="1" time="0.33688">
+  <testcase classname="examples.users.registeruser" name="register the user" time="0.33688">
+    <failure message="registeruser.feature:14 - status code was: 400, expected: 200, response time: 325, url: https://reqres.in/api/register, response: {&quot;error&quot;:&quot;Note: Only defined users succeed registration&quot;}">* url 'https://reqres.in/api' ............................................. passed
+* header content-type = 'Application/Json' ................................ passed
+Given path 'register' ..................................................... passed
+And request { "email": "#(username)","password": "#(password)"} ........... passed
+When method post .......................................................... passed
+Then status 200 ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: registeruser.feature:14 - status code was: 400, expected: 200, response time: 325, url: https://reqres.in/api/register, response: {"error":"Note: Only defined users succeed registration"}&#13;
+	at ✽.Then status 200 (registeruser.feature:14)</failure>
+  </testcase>
+</testsuite>

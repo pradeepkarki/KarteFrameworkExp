@@ -1,5 +1,5 @@
-<testsuite failures="0" name="examples/users/calluserdetails.feature" skipped="0" tests="1" time="3.955859">
-  <testcase classname="examples.users.calluserdetails" name="get list of users" time="3.955859">
+<testsuite failures="0" name="examples/users/calluserdetails.feature" skipped="0" tests="1" time="1.563266">
+  <testcase classname="examples.users.calluserdetails" name="get list of users" time="1.563266">
     <system-out>* url 'https://reqres.in/api' ............................................. passed
 * header content-type = 'aplication/json' ................................. passed
 * def resp = call read('userdetails.feature') ............................. passed

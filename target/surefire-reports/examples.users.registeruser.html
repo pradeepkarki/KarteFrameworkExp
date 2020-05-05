@@ -45,7 +45,7 @@
   .embed img { width: 100%; }
 </style>
 
-<title>examples.users.userdetails</title>
+<title>examples.users.registeruser</title>
 <script>window.onload = function() {
   var possibleModes = ['failed', 'skipped', 'passed'];
   var tests = {};
@@ -168,61 +168,62 @@
 </img><div>
 <div class="scenario">
 <div class="scenario-heading">
-<span class="scenario-keyword">Scenario: [1:7]</span><span class="scenario-name">get list of users</span>
+<span class="scenario-keyword">Scenario: [1:10]</span><span class="scenario-name">register the user</span>
 </div>
 <div class="step-row">
 <div class="step-cell passed">* url 'https://reqres.in/api'</div>
-<div class="time-cell passed">0.000615</div>
+<div class="time-cell passed">0.000531</div>
 </div>
-<div class="preformatted">14:12:26.224 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="preformatted">14:12:25.549 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
 <div class="step-row">
-<div class="step-cell passed">* header content-type = 'aplication/json'</div>
-<div class="time-cell passed">0.000459</div>
-</div>
-<div class="step-row">
-<div class="step-cell passed">Given path 'users'</div>
-<div class="time-cell passed">0.00042</div>
+<div class="step-cell passed">* header content-type = 'Application/Json'</div>
+<div class="time-cell passed">0.00049</div>
 </div>
 <div class="step-row">
-<div class="step-cell passed">And param page = 2</div>
-<div class="time-cell passed">0.000444</div>
+<div class="step-cell passed">Given path 'register'</div>
+<div class="time-cell passed">0.006781</div>
 </div>
 <div class="step-row">
-<div class="step-cell passed">When method get</div>
-<div class="time-cell passed">0.164746</div>
+<div class="step-cell passed">And request { "email": "#(username)","password": "#(password)"}</div>
+<div class="time-cell passed">0.030087</div>
 </div>
-<div class="preformatted">14:12:26.233 request:
-1 &gt; GET https://reqres.in/api/users?page=2
+<div class="step-row">
+<div class="step-cell passed">When method post</div>
+<div class="time-cell passed">0.422536</div>
+</div>
+<div class="preformatted">14:12:25.607 request:
+1 &gt; POST https://reqres.in/api/register
 1 &gt; Accept-Encoding: gzip,deflate
 1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 48
+1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Host: reqres.in
 1 &gt; User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_91)
-1 &gt; content-type: aplication/json
+{"email":"#(username)","password":"#(password)"}
 
-14:12:26.391 response time in milliseconds: 156.65
-1 &lt; 200
+14:12:26.007 response time in milliseconds: 398.29
+1 &lt; 400
 1 &lt; Access-Control-Allow-Origin: *
-1 &lt; Age: 1485
-1 &lt; CF-Cache-Status: HIT
-1 &lt; CF-RAY: 58e0edab4f0ee135-BOM
-1 &lt; Cache-Control: max-age=14400
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; CF-RAY: 58e0eda768e1df36-BOM
 1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 57
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Date: Mon, 04 May 2020 08:42:26 GMT
-1 &lt; Etag: W/"4dd-IPv5LdOOb6s5S9E3i59wBCJ1k/0"
+1 &lt; Etag: W/"39-6jrJxn+7f+pQUhbPgNMst7tagpA"
 1 &lt; Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 1 &lt; Server: cloudflare
-1 &lt; Set-Cookie: __cfduid=dbfa08105dc6ccd4eb55fc9b02e8236dc1588581746; expires=Wed, 03-Jun-20 08:42:26 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
-1 &lt; Transfer-Encoding: chunked
-1 &lt; Vary: Accept-Encoding
+1 &lt; Set-Cookie: __cfduid=dd5a27b2f06044b9de14d0db1145ab15b1588581745; expires=Wed, 03-Jun-20 08:42:25 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
 1 &lt; Via: 1.1 vegur
 1 &lt; X-Powered-By: Express
-1 &lt; cf-request-id: 028072df110000e13522aba200000001
-{"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/follettkyle/128.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/araa3185/128.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/vivekprvr/128.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/russoedu/128.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/hebertialmeida/128.jpg"}],"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}</div>
+1 &lt; cf-request-id: 028072dc9d0000df36b8984200000001
+{"error":"Note: Only defined users succeed registration"}</div>
 <div class="step-row">
-<div class="step-cell passed">Then status 200</div>
-<div class="time-cell passed">0.000025</div>
+<div class="step-cell failed">Then status 200</div>
+<div class="time-cell failed">0.001595</div>
 </div>
+<div class="preformatted">14:12:26.013 status code was: 400, expected: 200, response time: 398, url: https://reqres.in/api/register, response: {"error":"Note: Only defined users succeed registration"}
+registeruser.feature:14 - status code was: 400, expected: 200, response time: 398, url: https://reqres.in/api/register, response: {"error":"Note: Only defined users succeed registration"}</div>
 </div>
 </div>
 </body>

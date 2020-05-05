@@ -1,5 +1,5 @@
-<testsuite failures="0" name="examples/users/userdetails.feature" skipped="0" tests="1" time="2.928859">
-  <testcase classname="examples.users.userdetails" name="get list of users" time="2.928859">
+<testsuite failures="0" name="examples/users/userdetails.feature" skipped="0" tests="1" time="0.10116">
+  <testcase classname="examples.users.userdetails" name="get list of users" time="0.10116">
     <system-out>* url 'https://reqres.in/api' ............................................. passed
 * header content-type = 'aplication/json' ................................. passed
 Given path 'users' ........................................................ passed

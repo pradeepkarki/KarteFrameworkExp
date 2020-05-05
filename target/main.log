@@ -1,5 +1,6 @@
-00:10:20.969 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
-00:10:21.841 request:
+14:12:22.415 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+14:12:22.816 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+14:12:23.479 request:
 1 > GET https://reqres.in/api/users?page=2
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
@@ -7,28 +8,28 @@
 1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_91)
 1 > content-type: aplication/json
 
-00:10:22.860 response time in milliseconds: 1009.54
+14:12:24.224 response time in milliseconds: 736.92
 1 < 200
 1 < Access-Control-Allow-Origin: *
-1 < Age: 2414
+1 < Age: 1483
 1 < CF-Cache-Status: HIT
-1 < CF-RAY: 58dc1c3d7ecedc43-LHR
+1 < CF-RAY: 58e0ed9d5801e15a-BOM
 1 < Cache-Control: max-age=14400
 1 < Connection: keep-alive
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Sun, 03 May 2020 18:40:25 GMT
+1 < Date: Mon, 04 May 2020 08:42:24 GMT
 1 < Etag: W/"4dd-IPv5LdOOb6s5S9E3i59wBCJ1k/0"
 1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 1 < Server: cloudflare
-1 < Set-Cookie: __cfduid=dcfe41547d184cd4655402944c8deca841588531225; expires=Tue, 02-Jun-20 18:40:25 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Set-Cookie: __cfduid=df53b5aada8e572b7746d0bf7d63d2db41588581744; expires=Wed, 03-Jun-20 08:42:24 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
 1 < Transfer-Encoding: chunked
 1 < Vary: Accept-Encoding
 1 < Via: 1.1 vegur
 1 < X-Powered-By: Express
-1 < cf-request-id: 027d6ffa680000dc43fb18d200000001
+1 < cf-request-id: 028072d6530000e15a701ad200000001
 {"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/follettkyle/128.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/araa3185/128.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/vivekprvr/128.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/russoedu/128.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/hebertialmeida/128.jpg"}],"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}
 
-00:10:23.130 [print] ***************** {
+14:12:24.406 [print] ***************** {
   "per_page": 6,
   "total": 12,
   "ad": {
@@ -84,7 +85,7 @@
   "total_pages": 2
 }
 
-00:10:23.158 request:
+14:12:24.417 request:
 1 > GET https://reqres.in/api/users?page=2
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
@@ -92,28 +93,28 @@
 1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_91)
 1 > content-type: aplication/json
 
-00:10:23.686 response time in milliseconds: 525.53
+14:12:25.407 response time in milliseconds: 987.61
 1 < 200
 1 < Access-Control-Allow-Origin: *
-1 < Age: 2415
+1 < Age: 1484
 1 < CF-Cache-Status: HIT
-1 < CF-RAY: 58dc1c42def2ce4b-LHR
+1 < CF-RAY: 58e0eda04e6ce14e-BOM
 1 < Cache-Control: max-age=14400
 1 < Connection: keep-alive
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Sun, 03 May 2020 18:40:26 GMT
+1 < Date: Mon, 04 May 2020 08:42:25 GMT
 1 < Etag: W/"4dd-IPv5LdOOb6s5S9E3i59wBCJ1k/0"
 1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 1 < Server: cloudflare
-1 < Set-Cookie: __cfduid=d2277d16bf4fd4121614c9ad5f9ed5db71588531226; expires=Tue, 02-Jun-20 18:40:26 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Set-Cookie: __cfduid=decb28a8c98396fd3486bc32325c08e711588581744; expires=Wed, 03-Jun-20 08:42:24 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
 1 < Transfer-Encoding: chunked
 1 < Vary: Accept-Encoding
 1 < Via: 1.1 vegur
 1 < X-Powered-By: Express
-1 < cf-request-id: 027d6ffdc50000ce4bc93f9200000001
+1 < cf-request-id: 028072d8280000e14edfad4200000001
 {"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/follettkyle/128.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/araa3185/128.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/vivekprvr/128.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/russoedu/128.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/hebertialmeida/128.jpg"}],"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}
 
-00:10:23.697 [print] @@@@@@@@ {
+14:12:25.417 [print] @@@@@@@@ {
   "per_page": 6,
   "total": 12,
   "ad": {
@@ -169,8 +170,38 @@
   "total_pages": 2
 }
 
-00:10:24.297 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
-00:10:24.304 request:
+14:12:25.549 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+14:12:25.607 request:
+1 > POST https://reqres.in/api/register
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 48
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_91)
+{"email":"#(username)","password":"#(password)"}
+
+14:12:26.007 response time in milliseconds: 398.29
+1 < 400
+1 < Access-Control-Allow-Origin: *
+1 < CF-Cache-Status: DYNAMIC
+1 < CF-RAY: 58e0eda768e1df36-BOM
+1 < Connection: keep-alive
+1 < Content-Length: 57
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 04 May 2020 08:42:26 GMT
+1 < Etag: W/"39-6jrJxn+7f+pQUhbPgNMst7tagpA"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=dd5a27b2f06044b9de14d0db1145ab15b1588581745; expires=Wed, 03-Jun-20 08:42:25 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 028072dc9d0000df36b8984200000001
+{"error":"Note: Only defined users succeed registration"}
+
+14:12:26.013 status code was: 400, expected: 200, response time: 398, url: https://reqres.in/api/register, response: {"error":"Note: Only defined users succeed registration"}
+14:12:26.224 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+14:12:26.233 request:
 1 > GET https://reqres.in/api/users?page=2
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
@@ -178,29 +209,29 @@
 1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_91)
 1 > content-type: aplication/json
 
-00:10:24.742 response time in milliseconds: 436.20
+14:12:26.391 response time in milliseconds: 156.65
 1 < 200
 1 < Access-Control-Allow-Origin: *
-1 < Age: 2416
+1 < Age: 1485
 1 < CF-Cache-Status: HIT
-1 < CF-RAY: 58dc1c499ee5e690-LHR
+1 < CF-RAY: 58e0edab4f0ee135-BOM
 1 < Cache-Control: max-age=14400
 1 < Connection: keep-alive
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Sun, 03 May 2020 18:40:27 GMT
+1 < Date: Mon, 04 May 2020 08:42:26 GMT
 1 < Etag: W/"4dd-IPv5LdOOb6s5S9E3i59wBCJ1k/0"
 1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 1 < Server: cloudflare
-1 < Set-Cookie: __cfduid=ddec6dec7712d70c7ccfedbc640633e531588531227; expires=Tue, 02-Jun-20 18:40:27 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Set-Cookie: __cfduid=dbfa08105dc6ccd4eb55fc9b02e8236dc1588581746; expires=Wed, 03-Jun-20 08:42:26 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
 1 < Transfer-Encoding: chunked
 1 < Vary: Accept-Encoding
 1 < Via: 1.1 vegur
 1 < X-Powered-By: Express
-1 < cf-request-id: 027d7002030000e6906304b200000001
+1 < cf-request-id: 028072df110000e13522aba200000001
 {"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/follettkyle/128.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/araa3185/128.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/vivekprvr/128.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/russoedu/128.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/hebertialmeida/128.jpg"}],"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}
 
-00:10:24.906 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
-00:10:24.913 request:
+14:12:26.597 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+14:12:26.602 request:
 1 > GET https://reqres.in/api/users?page=2
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
@@ -208,28 +239,28 @@
 1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_91)
 1 > content-type: aplication/json
 
-00:10:25.426 response time in milliseconds: 510.18
+14:12:26.829 response time in milliseconds: 215.30
 1 < 200
 1 < Access-Control-Allow-Origin: *
-1 < Age: 2416
+1 < Age: 1485
 1 < CF-Cache-Status: HIT
-1 < CF-RAY: 58dc1c4ddabfbc60-LHR
+1 < CF-RAY: 58e0edadeebce12d-BOM
 1 < Cache-Control: max-age=14400
 1 < Connection: keep-alive
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Sun, 03 May 2020 18:40:27 GMT
+1 < Date: Mon, 04 May 2020 08:42:26 GMT
 1 < Etag: W/"4dd-IPv5LdOOb6s5S9E3i59wBCJ1k/0"
 1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 1 < Server: cloudflare
-1 < Set-Cookie: __cfduid=d9d7fca5e95ee4cec11739ef1acd109161588531227; expires=Tue, 02-Jun-20 18:40:27 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Set-Cookie: __cfduid=ddce0b9931cf80054b264f5aa9e6098a31588581746; expires=Wed, 03-Jun-20 08:42:26 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
 1 < Transfer-Encoding: chunked
 1 < Vary: Accept-Encoding
 1 < Via: 1.1 vegur
 1 < X-Powered-By: Express
-1 < cf-request-id: 027d7004a50000bc602f266200000001
+1 < cf-request-id: 028072e0b10000e12df48fb200000001
 {"page":2,"per_page":6,"total":12,"total_pages":2,"data":[{"id":7,"email":"michael.lawson@reqres.in","first_name":"Michael","last_name":"Lawson","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/follettkyle/128.jpg"},{"id":8,"email":"lindsay.ferguson@reqres.in","first_name":"Lindsay","last_name":"Ferguson","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/araa3185/128.jpg"},{"id":9,"email":"tobias.funke@reqres.in","first_name":"Tobias","last_name":"Funke","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/vivekprvr/128.jpg"},{"id":10,"email":"byron.fields@reqres.in","first_name":"Byron","last_name":"Fields","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/russoedu/128.jpg"},{"id":11,"email":"george.edwards@reqres.in","first_name":"George","last_name":"Edwards","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg"},{"id":12,"email":"rachel.howell@reqres.in","first_name":"Rachel","last_name":"Howell","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/hebertialmeida/128.jpg"}],"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}
 
-00:10:25.478 [print] data - > [
+14:12:26.863 [print] data - > [
   {
     "last_name": "Lawson",
     "id": 7,
@@ -274,8 +305,8 @@
   }
 ]
 
-00:10:25.512 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
-00:10:25.545 request:
+14:12:26.891 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+14:12:26.902 request:
 1 > GET https://reqres.in/api/users/1
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
@@ -283,31 +314,31 @@
 1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_91)
 1 > content-type: aplication/json
 
-00:10:26.061 response time in milliseconds: 512.92
+14:12:27.316 response time in milliseconds: 411.70
 1 < 200
 1 < Access-Control-Allow-Origin: *
-1 < Age: 1450
+1 < Age: 3875
 1 < CF-Cache-Status: HIT
-1 < CF-RAY: 58dc1c51cd6edbff-LHR
+1 < CF-RAY: 58e0edb008bae131-BOM
 1 < Cache-Control: max-age=14400
 1 < Connection: keep-alive
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Sun, 03 May 2020 18:40:28 GMT
+1 < Date: Mon, 04 May 2020 08:42:27 GMT
 1 < Etag: W/"172-2ZZzAny/UrOMYxwGqcj81wSK1S4"
 1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 1 < Server: cloudflare
-1 < Set-Cookie: __cfduid=d63eddb5cda5708fed463d896157acb591588531228; expires=Tue, 02-Jun-20 18:40:28 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Set-Cookie: __cfduid=de6f150d1a0a603672f518e52688d8c4e1588581747; expires=Wed, 03-Jun-20 08:42:27 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
 1 < Transfer-Encoding: chunked
 1 < Vary: Accept-Encoding
 1 < Via: 1.1 vegur
 1 < X-Powered-By: Express
-1 < cf-request-id: 027d7007190000dbff2b2ca200000001
+1 < cf-request-id: 028072e2020000e1310b381200000001
 {"data":{"id":1,"email":"george.bluth@reqres.in","first_name":"George","last_name":"Bluth","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/calebogden/128.jpg"},"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}
 
-00:10:26.096 [print] id :  1
-00:10:26.117 [print] email id : george.bluth@reqres.in
-00:10:26.172 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
-00:10:26.184 request:
+14:12:27.346 [print] id :  1
+14:12:27.374 [print] email id : george.bluth@reqres.in
+14:12:27.412 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+14:12:27.420 request:
 1 > GET https://reqres.in/api/users/2
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
@@ -315,31 +346,31 @@
 1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_91)
 1 > content-type: aplication/json
 
-00:10:27.081 response time in milliseconds: 893.95
+14:12:27.728 response time in milliseconds: 303.01
 1 < 200
 1 < Access-Control-Allow-Origin: *
-1 < Age: 6015
+1 < Age: 5824
 1 < CF-Cache-Status: HIT
-1 < CF-RAY: 58dc1c584ce8bc42-LHR
+1 < CF-RAY: 58e0edb40daae131-BOM
 1 < Cache-Control: max-age=14400
 1 < Connection: keep-alive
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Sun, 03 May 2020 18:40:29 GMT
+1 < Date: Mon, 04 May 2020 08:42:27 GMT
 1 < Etag: W/"173-1Z8bn0V7UjH6FK7NCaza1ccWXQk"
 1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 1 < Server: cloudflare
-1 < Set-Cookie: __cfduid=d2ce45e5441000c2f68f95f139cc48db31588531229; expires=Tue, 02-Jun-20 18:40:29 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Set-Cookie: __cfduid=de6f150d1a0a603672f518e52688d8c4e1588581747; expires=Wed, 03-Jun-20 08:42:27 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
 1 < Transfer-Encoding: chunked
 1 < Vary: Accept-Encoding
 1 < Via: 1.1 vegur
 1 < X-Powered-By: Express
-1 < cf-request-id: 027d700b280000bc420a158200000001
+1 < cf-request-id: 028072e4800000e13108144200000001
 {"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg"},"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}
 
-00:10:27.086 [print] id :  2
-00:10:27.089 [print] email id : janet.weaver@reqres.in
-00:10:27.171 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
-00:10:27.194 request:
+14:12:27.735 [print] id :  2
+14:12:27.738 [print] email id : janet.weaver@reqres.in
+14:12:27.770 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+14:12:27.787 request:
 1 > GET https://reqres.in/api/unknown
 1 > Accept-Encoding: gzip,deflate
 1 > Connection: Keep-Alive
@@ -347,24 +378,66 @@
 1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_91)
 1 > content-type: aplication/json
 
-00:10:27.803 response time in milliseconds: 606.72
+14:12:27.885 response time in milliseconds: 94.85
 1 < 200
 1 < Access-Control-Allow-Origin: *
-1 < Age: 1003
+1 < Age: 3875
 1 < CF-Cache-Status: HIT
-1 < CF-RAY: 58dc1c5ccd3d0722-LHR
+1 < CF-RAY: 58e0edb4e86be15e-BOM
 1 < Cache-Control: max-age=14400
 1 < Connection: keep-alive
 1 < Content-Type: application/json; charset=utf-8
-1 < Date: Sun, 03 May 2020 18:40:30 GMT
+1 < Date: Mon, 04 May 2020 08:42:27 GMT
 1 < Etag: W/"301-ijGNEim/mAI7LpbQIXyQc2bjt+k"
 1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 1 < Server: cloudflare
-1 < Set-Cookie: __cfduid=d9696b28cad50dc1cbd3df0586cccd30b1588531230; expires=Tue, 02-Jun-20 18:40:30 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Set-Cookie: __cfduid=d248d0fb638996ed6a0c1b555c02b155d1588581747; expires=Wed, 03-Jun-20 08:42:27 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
 1 < Transfer-Encoding: chunked
 1 < Vary: Accept-Encoding
 1 < Via: 1.1 vegur
 1 < X-Powered-By: Express
-1 < cf-request-id: 027d700dfa000007227c84c200000001
+1 < cf-request-id: 028072e5130000e15ee081a200000001
+{"page":1,"per_page":6,"total":12,"total_pages":2,"data":[{"id":1,"name":"cerulean","year":2000,"color":"#98B2D1","pantone_value":"15-4020"},{"id":2,"name":"fuchsia rose","year":2001,"color":"#C74375","pantone_value":"17-2031"},{"id":3,"name":"true red","year":2002,"color":"#BF1932","pantone_value":"19-1664"},{"id":4,"name":"aqua sky","year":2003,"color":"#7BC4C4","pantone_value":"14-4811"},{"id":5,"name":"tigerlily","year":2004,"color":"#E2583E","pantone_value":"17-1456"},{"id":6,"name":"blue turquoise","year":2005,"color":"#53B0AE","pantone_value":"15-5217"}],"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}
+
+acon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=de23162412bb9e4fb715117f6b49206911588577948; expires=Wed, 03-Jun-20 07:39:08 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 028038e9610000df7bb8265200000001
+{"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg"},"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}
+
+13:09:07.795 [print] id :  2
+13:09:07.798 [print] email id : janet.weaver@reqres.in
+13:09:07.813 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+13:09:07.823 request:
+1 > GET https://reqres.in/api/unknown
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: reqres.in
+1 > User-Agent: Apache-HttpClient/4.5.11 (Java/1.8.0_91)
+1 > content-type: aplication/json
+
+13:09:07.905 response time in milliseconds: 81.13
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Age: 76
+1 < CF-Cache-Status: HIT
+1 < CF-RAY: 58e090efc860df67-BOM
+1 < Cache-Control: max-age=14400
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Mon, 04 May 2020 07:39:08 GMT
+1 < Etag: W/"301-ijGNEim/mAI7LpbQIXyQc2bjt+k"
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Server: cloudflare
+1 < Set-Cookie: __cfduid=de99b9213a7334be392c216d9f47f11461588577948; expires=Wed, 03-Jun-20 07:39:08 GMT; path=/; domain=.reqres.in; HttpOnly; SameSite=Lax; Secure
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 vegur
+1 < X-Powered-By: Express
+1 < cf-request-id: 028038e9db0000df67d3ab6200000001
 {"page":1,"per_page":6,"total":12,"total_pages":2,"data":[{"id":1,"name":"cerulean","year":2000,"color":"#98B2D1","pantone_value":"15-4020"},{"id":2,"name":"fuchsia rose","year":2001,"color":"#C74375","pantone_value":"17-2031"},{"id":3,"name":"true red","year":2002,"color":"#BF1932","pantone_value":"19-1664"},{"id":4,"name":"aqua sky","year":2003,"color":"#7BC4C4","pantone_value":"14-4811"},{"id":5,"name":"tigerlily","year":2004,"color":"#E2583E","pantone_value":"17-1456"},{"id":6,"name":"blue turquoise","year":2005,"color":"#53B0AE","pantone_value":"15-5217"}],"ad":{"company":"StatusCode Weekly","url":"http://statuscode.org/","text":"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."}}
 

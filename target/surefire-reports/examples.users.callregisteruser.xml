@@ -1,0 +1,18 @@
+<testsuite failures="1" name="examples/users/callregisteruser.feature" skipped="0" tests="1" time="1.718916">
+  <testcase classname="examples.users.callregisteruser" name="generate token" time="1.718916">
+    <failure message="-unknown-:16 - &#10;registeruser.feature:14 - status code was: 400, expected: 200, response time: 705, url: https://reqres.in/api/register, response: {&quot;error&quot;:&quot;Note: Only defined users succeed registration&quot;}">* url 'https://reqres.in/api' ............................................. passed
+* header content-type = 'Application/Json' ................................ passed
+* table loginDetails ...................................................... passed
+* def payload = read('this:payload.json') ................................. passed
+* def responsecall = call read('registeruser.feature') payload ............ failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: -unknown-:16 - 
+registeruser.feature:14 - status code was: 400, expected: 200, response time: 705, url: https://reqres.in/api/register, response: {"error":"Note: Only defined users succeed registration"}&#13;
+	at ✽.* def responsecall = call read('registeruser.feature') payload (-unknown-:16)&#13;
+
+* def expectedToken = responsecall.response.token ......................... skipped
+* print 'Id : ',responsecall.response.id .................................. skipped
+* print 'Access token : ', expectedToken .................................. skipped</failure>
+  </testcase>
+</testsuite>
